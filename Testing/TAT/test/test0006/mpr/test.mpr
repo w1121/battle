@@ -1,0 +1,16 @@
+mscdocument Untitled;
+msc Untitled;
+Test: instance;
+IUT: instance;
+text 'def ComplexData x';
+Test: out A,1((:(.(:"qwe","rty":),(:"ui","op":),"123".),(.(:"asd","fgh":),(:"jk","l;":),"456".):)) to IUT;
+IUT: in A,1((:(.(:"qwe","rty":),(:"ui","op":),"123".),(.(:"asd","fgh":),(:"jk","l;":),"456".):)) from Test;
+IUT: out B,2(&x:{(:(.(:"qwe","rty":),(:"ui","op":),"123".),(.(:"asd","fgh":),(:"jk","l;":),"456".):)}) to Test;
+Test: in B,2(&x:{(:(.(:"qwe","rty":),(:"ui","op":),"123".),(.(:"asd","fgh":),(:"jk","l;":),"456".):)}) from IUT;
+Test: out A,3(x) to IUT;
+IUT: in A,3(x) from Test;
+IUT: out B,4(x) to Test;
+Test: in B,4(x) from IUT;
+Test: endinstance;
+IUT: endinstance;
+endmsc;

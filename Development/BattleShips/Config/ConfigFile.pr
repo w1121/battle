@@ -1,0 +1,43 @@
+/* Relative path to map (the file is read at run time) */
+synonym MapPath Charstring = '..\..\Maps\map_test.map';
+
+/* Map size */
+synonym MaxXCoordinate Integer = 200;
+synonym MaxYCoordinate Integer = 100;
+
+/* Relative path to ships and weapons settings (the file is read at run time) */
+synonym WeaponrySettingsPath Charstring = '..\..\Config\DataValue.pr';
+
+/* In Test Mode:
+  - strategies never win
+!!  look at the second file and set:
+!!   - own ships amount by type and their initial location
+!!   - enemy ships - the same
+*/
+synonym TestMode Boolean = false;
+
+synonym AmountStrategy Integer = 2;
+
+/* One of strategies does not move flag.
+   StrategyNeverMovesID: 0 = off, 1 or 2 = this strategy does not move
+ */
+synonym StrategyNeverMovesID Integer = 0; 
+
+synonym MaxWCPower Integer = 30;
+synonym MaxWCRange Integer = 50;
+synonym MaxWCSpeed Integer = 30;
+
+synonym MaxSCRange Integer = 100;
+synonym MaxSCMaxSpeed Integer = 10;
+synonym MaxSCMaxAcceleration Integer = 5;
+synonym MaxSCMaxResource Integer = 100;
+
+synonym MaxAAWeaponry Integer = 30;
+synonym MaxLUWeaponry Integer = 5;
+
+synonym MaxTypeBattleship Integer = 2;
+synonym MaxTypeCruiser Integer = 2;
+synonym MaxTypeDestroyer Integer = 2;
+synonym MaxTypeMissileCutter Integer = 2;
+synonym MaxTypeRepairBoat Integer = 1;
+

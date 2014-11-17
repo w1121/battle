@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_baselib", "baselib.vcproj", "{309EF54C-217E-4AEA-92A6-F270AC9806D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "atsgen", "atsgen.vcproj", "{0EE6819D-556D-4079-A907-AC31DE82BAC1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0} = {309EF54C-217E-4AEA-92A6-F270AC9806D0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "macroprc", "macroprc.vcproj", "{9F12F8B1-3CF8-4B07-A339-DFED8C29B4CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0} = {309EF54C-217E-4AEA-92A6-F270AC9806D0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mscjust", "mscjust.vcproj", "{3B269E65-C2F1-4D8A-9FF1-0F7E8C2D320E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0} = {309EF54C-217E-4AEA-92A6-F270AC9806D0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "msclink", "msclink.vcproj", "{0D1134DE-CDEE-4C36-9A5C-1F982039AD19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0} = {309EF54C-217E-4AEA-92A6-F270AC9806D0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mscmetr", "mscmetr.vcproj", "{CDF65835-3827-462D-AADB-62C0482F4210}"
+	ProjectSection(ProjectDependencies) = postProject
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0} = {309EF54C-217E-4AEA-92A6-F270AC9806D0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tracegen", "tracegen.vcproj", "{08AC3204-6687-49C8-A813-D55B2537701A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0} = {309EF54C-217E-4AEA-92A6-F270AC9806D0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0}.Debug|Win32.Build.0 = Debug|Win32
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0}.Release|Win32.ActiveCfg = Release|Win32
+		{309EF54C-217E-4AEA-92A6-F270AC9806D0}.Release|Win32.Build.0 = Release|Win32
+		{0EE6819D-556D-4079-A907-AC31DE82BAC1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0EE6819D-556D-4079-A907-AC31DE82BAC1}.Debug|Win32.Build.0 = Debug|Win32
+		{0EE6819D-556D-4079-A907-AC31DE82BAC1}.Release|Win32.ActiveCfg = Release|Win32
+		{0EE6819D-556D-4079-A907-AC31DE82BAC1}.Release|Win32.Build.0 = Release|Win32
+		{9F12F8B1-3CF8-4B07-A339-DFED8C29B4CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F12F8B1-3CF8-4B07-A339-DFED8C29B4CB}.Release|Win32.ActiveCfg = Release|Win32
+		{3B269E65-C2F1-4D8A-9FF1-0F7E8C2D320E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B269E65-C2F1-4D8A-9FF1-0F7E8C2D320E}.Release|Win32.ActiveCfg = Release|Win32
+		{0D1134DE-CDEE-4C36-9A5C-1F982039AD19}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D1134DE-CDEE-4C36-9A5C-1F982039AD19}.Release|Win32.ActiveCfg = Release|Win32
+		{CDF65835-3827-462D-AADB-62C0482F4210}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CDF65835-3827-462D-AADB-62C0482F4210}.Release|Win32.ActiveCfg = Release|Win32
+		{08AC3204-6687-49C8-A813-D55B2537701A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{08AC3204-6687-49C8-A813-D55B2537701A}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1574 @@
+ERROR	###:	Can't connect to 10.0.2.15:22881
+INFO	##:	Opened connection to 10.0.2.15:22881
+INFO	##:	Connection state changed to Inited
+INFO	##:	Connection state changed to Established
+INFO	##:	Number of strategies changed to 2
+INFO	##:	Map descriptor changed to BattleShips.MapDescr
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			31		23		East		0		15			3		15			0
+INFO	##:	2	Cruiser			70			1			30		23		NorthWest	0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			29		23		West		0		0			6		30			0
+INFO	##:	4	Destroyer		30			1			28		23		NorthEast	0		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			27		23		South		0		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			31		22		NorthWest	0		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			30		22		SouthEast	0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			29		22		SouthEast	0		6			30		15			0
+INFO	##:	9	BattleShip		100			1			28		22		NorthWest	0		6			30		15			0
+INFO	##:	10	Cruiser			70			2			184		36		NorthWest	0		15			3		15			0
+INFO	##:	11	Cruiser			70			2			183		36		South		0		15			3		15			0
+INFO	##:	12	Destroyer		30			2			182		36		North		0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			181		36		East		0		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			180		36		West		0		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			184		35		NorthEast	0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			183		35		South		0		0			0		0			6
+INFO	##:	17	BattleShip		100			2			182		35		SouthEast	0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			181		35		NorthWest	0		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			31		23		NorthEast	0		15			3		15			0
+INFO	##:	2	Cruiser			70			1			30		23		North		0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			29		23		NorthWest	0		0			6		30			0
+INFO	##:	4	Destroyer		30			1			30		25		NorthEast	4		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			27		23		SouthEast	0		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			31		22		North		0		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			30		22		East		0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			29		22		East		0		6			30		15			0
+INFO	##:	9	BattleShip		100			1			28		22		North		0		6			30		15			0
+INFO	##:	10	Cruiser			70			2			184		36		West		0		15			3		15			0
+INFO	##:	11	Cruiser			70			2			183		36		SouthWest	0		15			3		15			0
+INFO	##:	12	Destroyer		30			2			182		36		NorthWest	0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			181		36		SouthEast	0		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			180		36		SouthWest	0		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			184		35		North		0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			183		35		SouthWest	0		0			0		0			6
+INFO	##:	17	BattleShip		100			2			182		35		South		0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			181		35		West		0		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			33		25		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			70			1			30		23		NorthEast	0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			29		23		North		0		0			6		30			0
+INFO	##:	4	Destroyer		30			1			34		25		East		4		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			27		23		East		0		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			31		22		NorthEast	0		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			30		22		NorthEast	0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			29		22		NorthEast	0		6			30		15			0
+INFO	##:	9	BattleShip		100			1			28		22		NorthEast	0		6			30		15			0
+INFO	##:	10	Cruiser			70			2			184		36		SouthWest	0		15			3		15			0
+INFO	##:	11	Cruiser			70			2			181		34		SouthWest	3		15			3		15			0
+INFO	##:	12	Destroyer		30			2			182		36		West		0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			181		36		South		0		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			177		33		SouthWest	5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			184		35		NorthWest	0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			182		34		SouthWest	2		0			0		0			6
+INFO	##:	17	BattleShip		100			2			182		35		SouthWest	0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			181		35		SouthWest	0		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			33		28		North		3		15			3		15			0
+INFO	##:	2	Cruiser			70			1			32		25		NorthEast	3		15			3		15			0
+INFO	##:	3	Destroyer		30			1			27		21		NorthEast	0		0			6		30			0
+INFO	##:	4	Destroyer		30			1			39		25		East		5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			27		23		NorthEast	0		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			34		25		NorthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			31		23		NorthEast	2		0			0		0			6
+INFO	##:	8	BattleShip		100			1			30		23		NorthEast	2		6			30		15			0
+INFO	##:	9	BattleShip		96			1			28		22		NorthEast	2		6			30		15			0
+INFO	##:	10	Cruiser			70			2			182		34		SouthWest	3		15			3		15			0
+INFO	##:	11	Cruiser			70			2			178		31		SouthWest	5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			182		36		SouthWest	0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			181		36		SouthWest	0		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			172		33		West		5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			184		35		West		0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			180		32		SouthWest	4		0			0		0			6
+INFO	##:	17	BattleShip		100			2			181		34		SouthWest	2		6			30		15			0
+INFO	##:	18	BattleShip		100			2			180		34		SouthWest	2		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			35		30		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			70			1			35		25		East		3		15			3		15			0
+INFO	##:	3	Destroyer		30			1			29		23		NorthEast	4		0			6		30			0
+INFO	##:	4	Destroyer		30			1			42		22		SouthEast	5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			30		26		NorthEast	5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			34		30		North		5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			33		25		NorthEast	4		0			0		0			6
+INFO	##:	8	BattleShip		100			1			32		25		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			30		24		NorthEast	4		6			30		15			0
+INFO	##:	10	Cruiser			70			2			179		31		SouthWest	5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			173		31		West		5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			180		34		SouthWest	4		0			6		30			0
+INFO	##:	13	Destroyer		30			2			179		34		SouthWest	4		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			169		30		SouthWest	5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			184		35		SouthWest	0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			177		29		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			179		32		SouthWest	4		6			30		15			0
+INFO	##:	18	BattleShip		100			2			178		32		SouthWest	4		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			35		33		North		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			39		25		East		0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			32		26		NorthEast	5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			42		17		South		5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			35		26		East		5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			37		33		NorthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			37		25		East		4		0			0		0			6
+INFO	##:	8	BattleShip		100			1			32		29		North		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			33		27		NorthEast	5		6			30		15			0
+INFO	##:	10	Cruiser			70			2			174		31		West		5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			168		31		West		5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			177		31		SouthWest	5		0			6		30			0
+INFO	##:	13	Destroyer		30			2			176		31		SouthWest	5		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			164		30		West		5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			181		32		SouthWest	5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			172		29		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			176		29		SouthWest	5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			175		29		SouthWest	5		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			33		35		NorthWest	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			39		25		SouthEast	0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			32		31		North		5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			45		14		SouthEast	5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			38		23		SouthEast	5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			37		38		North		5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			42		25		East		5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			30		31		NorthWest	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			33		32		North		5		6			30		15			0
+INFO	##:	10	Cruiser			70			2			169		31		West		5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			165		28		SouthWest	5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			172		31		West		5		0			6		30			0
+INFO	##:	13	Destroyer		30			2			171		31		West		5		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			161		27		SouthWest	5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			176		32		West		5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			167		29		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			171		29		West		5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			170		29		West		5		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			33		38		North		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			39		25		South		0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			35		34		NorthEast	5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			50		14		East		5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			38		18		South		5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			40		41		NorthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			45		22		SouthEast	5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			30		35		North		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			33		35		North		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			164		31		West		5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			160		28		West		5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			167		31		West		5		0			6		30			0
+INFO	##:	13	Destroyer		30			2			166		31		West		5		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			156		27		West		5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			171		32		West		5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			162		29		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			166		29		West		5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			165		29		West		5		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			35		40		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			39		25		SouthWest	0		15			3		15			0
+INFO	##:	3	Destroyer		30			1			35		39		North		5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			53		11		SouthEast	5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			41		15		SouthEast	5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			40		46		North		5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			45		17		South		5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			32		37		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			31		37		NorthWest	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			161		28		SouthWest	5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			155		28		West		5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			164		28		SouthWest	5		0			6		30			0
+INFO	##:	13	Destroyer		30			2			163		28		SouthWest	5		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			153		24		SouthWest	5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			168		29		SouthWest	5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			159		26		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			161		29		West		5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			160		29		West		5		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			35		43		North		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			38		24		SouthWest	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			38		42		NorthEast	5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			58		11		East		5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			46		15		East		5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			43		49		NorthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			48		14		SouthEast	5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			32		41		North		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			31		40		North		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			156		28		West		5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			152		25		SouthWest	5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			159		28		West		5		0			6		30			0
+INFO	##:	13	Destroyer		30			2			158		28		West		5		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			148		24		West		5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			163		29		West		5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			154		26		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			158		26		SouthWest	5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			157		26		SouthWest	5		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			37		45		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			38		22		South		2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			38		47		North		5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			61		14		NorthEast	5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			49		12		SouthEast	5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			48		49		East		5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			53		14		East		5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			34		43		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			33		42		NorthEast	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			148		28		West		8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			147		25		West		5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			150		28		West		9		0			6		30			0
+INFO	##:	13	Destroyer		30			2			149		28		West		9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			138		24		West		10		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			153		29		West		10		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			151		29		NorthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			153		26		West		5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			152		26		West		5		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			40		45		East		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			39		21		SouthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			41		50		NorthEast	5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			66		14		East		5		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			54		12		East		5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			51		52		NorthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			56		11		SouthEast	5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			34		47		North		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			33		45		North		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			143		28		West		5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			139		25		West		8		15			3		15			0
+INFO	##:	12	Destroyer		30			2			141		28		West		9		0			6		30			0
+INFO	##:	13	Destroyer		30			2			140		28		West		9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			128		24		West		10		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			143		29		West		10		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			146		29		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			148		26		West		5		6			30		15			0
+INFO	##:	18	BattleShip		100			2			146		26		West		6		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			42		47		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			39		19		South		2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			46		50		East		5		0			6		30			0
+INFO	##:	4	Destroyer		30			1			75		14		East		9		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			64		12		East		10		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			56		52		East		5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			56		6		South		5		0			0		0			6
+INFO	##:	8	BattleShip		100			1			36		49		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			35		47		NorthEast	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			135		28		West		8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			131		25		West		8		15			3		15			0
+INFO	##:	12	Destroyer		30			2			132		28		West		9		0			6		30			0
+INFO	##:	13	Destroyer		30			2			131		28		West		9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			121		17		SouthWest	10		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			133		29		West		10		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			143		32		NorthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			142		26		West		6		6			30		15			0
+INFO	##:	18	BattleShip		100			2			140		26		West		6		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			45		47		East		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			40		18		SouthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			55		50		East		9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			84		14		East		9		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			74		12		East		10		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			59		49		SouthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			56		3		South		3		0			0		0			6
+INFO	##:	8	BattleShip		100			1			40		49		East		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			38		47		East		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			127		28		West		8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			126		20		SouthWest	8		15			3		15			0
+INFO	##:	12	Destroyer		30			2			126		34		NorthWest	9		0			6		30			0
+INFO	##:	13	Destroyer		30			2			125		22		SouthWest	9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			111		17		West		10		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			126		36		NorthWest	10		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			138		32		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			136		26		West		6		6			30		15			0
+INFO	##:	18	BattleShip		100			2			134		26		West		6		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			47		49		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			40		16		South		2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			61		44		SouthEast	9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			93		14		East		9		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			84		12		East		10		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			66		42		SouthEast	10		30			0		0			0
+INFO	##:	7	RepairBoat		25			1			56		2		South		1		0			0		0			6
+INFO	##:	8	BattleShip		100			1			42		51		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			40		49		NorthEast	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			122		23		SouthWest	8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			123		17		SouthWest	5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			123		37		NorthWest	5		0			6		30			0
+INFO	##:	13	Destroyer		30			2			125		13		South		9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			101		17		West		10		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			123		39		NorthWest	5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			135		29		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			130		26		West		6		6			30		15			0
+INFO	##:	18	BattleShip		100			2			128		26		West		6		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			50		49		East		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			41		15		SouthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			70		44		East		9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			99		8		SouthEast	9		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			89		12		East		5		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			73		35		SouthEast	10		30			0		0			0
+INFO	##:	7	RepairBoat		18			1			56		0		South		0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			46		51		East		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			40		52		North		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			122		15		South		8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			118		17		West		5		15			3		15			0
+INFO	##:	12	Destroyer		30			2			123		37		NorthWest	1		0			6		30			0
+INFO	##:	13	Destroyer		30			2			119		7		SouthWest	9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			96		17		West		5		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			123		39		NorthWest	0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			130		29		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			126		22		SouthWest	6		6			30		15			0
+INFO	##:	18	BattleShip		100			2			124		22		SouthWest	6		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			52		51		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			43		15		East		2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			76		38		SouthEast	9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			108		8		East		9		0			6		30			0
+INFO	##:	5	MissileCutter	10			1			89		12		East		0		30			0		0			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	5		30			0		0			0
+INFO	##:	7	RepairBoat		18			1			56		0		SouthWest	0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			48		53		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			42		54		NorthEast	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			117		10		SouthWest	8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			110		17		West		8		15			3		15			0
+INFO	##:	12	Destroyer		30			2			122		37		West		1		0			6		30			0
+INFO	##:	13	Destroyer		30			2			110		7		West		9		0			6		30			0
+INFO	##:	14	MissileCutter	10			2			96		17		West		0		30			0		0			0
+INFO	##:	15	MissileCutter	10			2			123		39		West		0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			127		26		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			124		20		SouthWest	4		6			30		15			0
+INFO	##:	18	BattleShip		100			2			122		20		SouthWest	4		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			55		51		East		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			44		14		SouthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			82		32		SouthEast	9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			113		8		East		5		0			6		30			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	0		30			0		0			0
+INFO	##:	7	RepairBoat		18			1			56		0		West		0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			52		53		East		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			45		54		East		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			109		10		West		8		15			3		15			0
+INFO	##:	11	Cruiser			70			2			105		17		West		5		15			3		15			0
+INFO	##:	12	Destroyer		23			2			119		37		West		0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			104		13		NorthWest	9		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			123		39		SouthWest	0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			124		23		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			123		19		SouthWest	2		6			30		15			0
+INFO	##:	18	BattleShip		100			2			122		16		South		4		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	1	0		96		17		96				17
+INFO	##:	2	0		99		15		102				17
+INFO	##:	3	0		98		9		101				7
+INFO	##:	4	0		98		10		112				5
+INFO	##:	5	0		99		13		120				18
+INFO	##:	6	0		89		12		89				12
+INFO	##:	7	0		105		13		117				8
+INFO	##:	8	0		88		23		79				29
+INFO	##:	9	0		89		24		82				32
+INFO	##:	10	0		87		14		56				0
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			57		53		NorthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			46		14		East		2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			82		23		South		9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			114		8		East		1		0			6		30			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	0		24			0		0			0
+INFO	##:	7	RepairBoat		18			1			56		0		NorthWest	0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			54		55		NorthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			47		56		NorthEast	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			104		10		West		5		15			3		15			0
+INFO	##:	11	Cruiser			70			2			103		17		West		2		15			3		15			0
+INFO	##:	12	Destroyer		23			2			119		37		SouthWest	0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			98		19		NorthWest	9		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			120		36		SouthWest	5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			119		23		West		5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			121		19		West		2		6			30		15			0
+INFO	##:	18	BattleShip		100			2			120		14		SouthWest	4		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	2	0		102		17		102				17
+INFO	##:	3	0		101		7		101				7
+INFO	##:	4	0		108		7		112				5
+INFO	##:	5	0		109		15		120				18
+INFO	##:	7	0		114		10		117				8
+INFO	##:	8	0		79		29		79				29
+INFO	##:	9	0		82		32		82				32
+INFO	##:	10	0		78		10		56				0
+INFO	##:	11	0		84		27		100				17
+INFO	##:	12	0		84		27		98				19
+INFO	##:	13	0		83		26		101				10
+INFO	##:	14	0		86		33		119				37
+INFO	##:	15	0		86		33		123				39
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			60		53		East		3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			47		13		SouthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			88		17		SouthEast	9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			114		8		East		0		0			6		30			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	0		18			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		NorthWest	2		0			0		0			6
+INFO	##:	8	BattleShip		100			1			58		55		East		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			50		56		East		3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			102		10		West		2		15			3		15			0
+INFO	##:	11	Cruiser			70			2			103		17		West		0		15			3		15			0
+INFO	##:	12	Destroyer		23			2			119		37		South		0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			92		25		NorthWest	9		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			120		31		South		5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			116		20		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		100			2			120		20		NorthWest	2		6			30		15			0
+INFO	##:	18	BattleShip		100			2			116		14		West		4		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	4	0		112		5		112				5
+INFO	##:	5	0		119		17		120				18
+INFO	##:	7	0		117		8		117				8
+INFO	##:	10	0		69		6		56				0
+INFO	##:	11	0		92		22		100				17
+INFO	##:	12	0		92		22		98				19
+INFO	##:	13	0		90		20		101				10
+INFO	##:	14	0		96		34		119				37
+INFO	##:	15	0		96		34		123				39
+INFO	##:	16	0		85		28		92				25
+INFO	##:	17	0		84		27		101				17
+INFO	##:	18	0		83		25		99				10
+INFO	##:	19	0		86		33		119				37
+INFO	##:	20	0		85		30		114				23
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			62		51		SouthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			49		13		East		2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			97		17		East		9		0			6		30			0
+INFO	##:	4	Destroyer		30			1			114		8		East		0		0			2		30			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	0		12			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		NorthWest	0		0			0		0			6
+INFO	##:	8	BattleShip		100			1			60		53		SouthEast	4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			52		54		SouthEast	3		6			30		15			0
+INFO	##:	10	Cruiser			70			2			102		10		West		0		15			3		15			0
+INFO	##:	11	Cruiser			70			2			103		17		West		0		13			3		15			0
+INFO	##:	12	Destroyer		23			2			119		37		SouthEast	0		0			6		30			0
+INFO	##:	13	Destroyer		30			2			83		25		West		9		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			117		28		SouthWest	5		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			111		20		West		5		0			0		0			6
+INFO	##:	17	BattleShip		68			2			118		22		NorthWest	0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			114		14		West		2		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	5	0		120		18		120				18
+INFO	##:	10	0		60		2		56				0
+INFO	##:	11	0		100		17		100				17
+INFO	##:	12	0		98		19		98				19
+INFO	##:	13	0		97		13		101				10
+INFO	##:	14	0		106		35		119				37
+INFO	##:	15	0		106		35		123				39
+INFO	##:	16	0		92		25		92				25
+INFO	##:	17	0		92		22		101				17
+INFO	##:	18	0		90		18		99				10
+INFO	##:	19	0		96		34		119				37
+INFO	##:	20	0		95		28		114				23
+INFO	##:	21	2		112		14		112				14
+INFO	##:	22	2		100		10		100				10
+INFO	##:	23	2		113		17		113				17
+INFO	##:	24	0		86		31		86				31
+INFO	##:	25	0		85		27		103				17
+INFO	##:	26	0		83		26		100				10
+INFO	##:	27	0		85		29		113				17
+INFO	##:	28	0		86		33		119				37
+INFO	##:	29	0		110		11		114				8
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			62		51		SouthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			50		12		SouthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		30			1			102		17		East		5		0			6		30			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	0		6			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		NorthWest	0		0			0		0			4
+INFO	##:	8	BattleShip		97			1			63		50		SouthEast	6		6			30		15			0
+INFO	##:	9	BattleShip		96			1			55		51		SouthEast	5		6			30		15			0
+INFO	##:	10	Cruiser			40			2			102		10		West		0		13			3		15			0
+INFO	##:	11	Cruiser			70			2			103		17		West		0		11			3		15			0
+INFO	##:	12	Destroyer		23			2			120		36		SouthEast	2		0			6		30			0
+INFO	##:	13	Destroyer		30			2			78		25		West		5		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			117		28		SouthWest	0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			108		17		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		68			2			118		22		North		0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			114		14		West		0		6			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	10	0		56		0		56				0
+INFO	##:	13	0		101		10		101				10
+INFO	##:	14	0		116		36		119				37
+INFO	##:	15	0		116		37		123				39
+INFO	##:	17	0		101		17		101				17
+INFO	##:	18	0		97		12		99				10
+INFO	##:	19	0		106		35		119				37
+INFO	##:	20	0		105		26		114				23
+INFO	##:	25	0		94		22		103				17
+INFO	##:	26	0		90		20		100				10
+INFO	##:	27	0		94		25		113				17
+INFO	##:	28	0		96		34		119				37
+INFO	##:	29	0		114		8		114				8
+INFO	##:	30	2		112		14		112				14
+INFO	##:	31	2		102		10		102				10
+INFO	##:	32	0		74		25		74				25
+INFO	##:	33	0		85		27		103				17
+INFO	##:	34	0		83		26		102				10
+INFO	##:	35	0		85		29		106				20
+INFO	##:	36	0		86		31		114				25
+INFO	##:	38	0		106		17		106				17
+INFO	##:	39	0		106		17		106				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			66		47		SouthEast	6		15			3		15			0
+INFO	##:	2	Cruiser			50			1			52		12		East		2		15			3		15			0
+INFO	##:	3	Destroyer		29			1			102		17		East		1		0			6		30			0
+INFO	##:	6	MissileCutter	10			1			76		32		SouthEast	0		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		NorthWest	0		0			0		0			2
+INFO	##:	8	BattleShip		97			1			69		50		East		6		6			30		15			0
+INFO	##:	9	BattleShip		96			1			60		51		East		5		6			30		15			0
+INFO	##:	10	Cruiser			40			2			102		10		West		0		11			3		15			0
+INFO	##:	11	Cruiser			68			2			104		17		West		0		9			3		15			0
+INFO	##:	12	Destroyer		23			2			120		34		South		2		0			6		30			0
+INFO	##:	13	Destroyer		30			2			77		25		West		1		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			117		28		West		0		30			0		0			0
+INFO	##:	16	RepairBoat		25			2			105		14		SouthWest	5		0			0		0			6
+INFO	##:	17	BattleShip		68			2			118		22		NorthEast	0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			114		14		West		0		3			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	14	0		119		37		119				37
+INFO	##:	15	0		123		39		123				39
+INFO	##:	18	0		99		10		99				10
+INFO	##:	19	0		116		36		119				37
+INFO	##:	20	0		114		23		114				23
+INFO	##:	25	0		103		17		103				17
+INFO	##:	26	0		97		13		100				10
+INFO	##:	27	0		103		21		113				17
+INFO	##:	28	0		106		35		119				37
+INFO	##:	33	0		94		22		103				17
+INFO	##:	34	0		90		20		102				10
+INFO	##:	35	0		94		25		106				20
+INFO	##:	36	0		96		29		114				25
+INFO	##:	40	0		73		25		73				25
+INFO	##:	41	0		85		27		103				17
+INFO	##:	42	0		83		26		102				10
+INFO	##:	43	0		84		27		105				14
+INFO	##:	44	0		86		32		117				28
+INFO	##:	46	0		107		17		107				17
+INFO	##:	47	0		107		17		107				17
+INFO	##:	48	0		107		17		107				17
+INFO	##:	49	0		105		18		76				32
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			68		45		SouthEast	3		15			3		15			0
+INFO	##:	2	Cruiser			50			1			53		13		NorthEast	2		15			3		15			0
+INFO	##:	3	Destroyer		29			1			102		17		East		0		0			6		30			0
+INFO	##:	6	MissileCutter	10			1			79		29		SouthEast	5		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		NorthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		97			1			73		50		East		4		6			30		15			0
+INFO	##:	9	BattleShip		96			1			63		54		NorthEast	5		6			30		15			0
+INFO	##:	10	Cruiser			40			2			102		10		West		0		9			3		15			0
+INFO	##:	11	Cruiser			68			2			104		17		West		0		7			3		15			0
+INFO	##:	12	Destroyer		23			2			121		33		SouthEast	2		0			6		30			0
+INFO	##:	13	Destroyer		30			2			77		25		West		0		0			6		30			0
+INFO	##:	15	MissileCutter	10			2			117		28		West		0		27			0		0			0
+INFO	##:	16	RepairBoat		25			2			103		12		SouthWest	3		0			0		0			6
+INFO	##:	17	BattleShip		68			2			118		22		East		0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			114		14		West		0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	19	0		119		37		119				37
+INFO	##:	26	0		100		10		100				10
+INFO	##:	27	0		113		17		113				17
+INFO	##:	28	0		116		36		119				37
+INFO	##:	33	0		103		17		103				17
+INFO	##:	34	0		98		14		102				10
+INFO	##:	35	0		103		22		106				20
+INFO	##:	36	0		106		27		114				25
+INFO	##:	41	0		94		22		103				17
+INFO	##:	42	0		90		20		102				10
+INFO	##:	43	0		92		22		105				14
+INFO	##:	44	0		96		31		117				28
+INFO	##:	49	0		96		22		76				32
+INFO	##:	51	0		103		17		103				17
+INFO	##:	52	0		103		17		103				17
+INFO	##:	53	0		109		22		103				17
+INFO	##:	54	0		107		28		76				32
+INFO	##:	55	0		104		16		103				17
+INFO	##:	56	0		105		18		76				32
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			68		45		SouthEast	0		15			3		15			0
+INFO	##:	2	Cruiser			30			1			55		15		NorthEast	0		15			3		15			0
+INFO	##:	6	MissileCutter	10			1			84		29		East		5		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		North		0		0			0		0			0
+INFO	##:	8	BattleShip		97			1			75		50		East		2		6			30		15			0
+INFO	##:	9	BattleShip		96			1			68		54		East		5		6			30		15			0
+INFO	##:	11	Cruiser			50			2			104		17		West		0		5			3		15			0
+INFO	##:	12	Destroyer		23			2			121		31		South		2		0			6		30			0
+INFO	##:	13	Destroyer		30			2			77		25		West		0		0			6		28			0
+INFO	##:	15	MissileCutter	10			2			117		28		West		0		23			0		0			0
+INFO	##:	16	RepairBoat		25			2			103		12		SouthWest	1		0			0		0			6
+INFO	##:	17	BattleShip		68			2			118		22		SouthEast	0		6			30		15			0
+INFO	##:	18	BattleShip		100			2			114		14		NorthWest	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	28	0		119		37		119				37
+INFO	##:	34	0		102		10		102				10
+INFO	##:	35	0		106		20		106				20
+INFO	##:	36	0		114		25		114				25
+INFO	##:	41	0		103		17		103				17
+INFO	##:	42	0		98		14		102				10
+INFO	##:	43	0		100		17		105				14
+INFO	##:	44	0		106		30		117				28
+INFO	##:	49	0		87		26		76				32
+INFO	##:	53	0		103		17		103				17
+INFO	##:	54	0		97		29		76				32
+INFO	##:	55	0		103		17		103				17
+INFO	##:	56	0		96		22		76				32
+INFO	##:	57	1		104		17		104				17
+INFO	##:	58	1		101		10		101				10
+INFO	##:	59	1		102		10		102				10
+INFO	##:	60	0		102		17		102				17
+INFO	##:	61	0		102		17		102				17
+INFO	##:	62	1		82		26		82				26
+INFO	##:	63	0		109		22		102				17
+INFO	##:	64	0		107		28		82				26
+INFO	##:	65	0		109		32		77				50
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			68		45		SouthEast	0		13			3		15			0
+INFO	##:	2	Cruiser			30			1			55		15		East		0		15			3		15			0
+INFO	##:	6	MissileCutter	10			1			87		26		SouthEast	5		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			55		1		NorthEast	0		0			0		0			0
+INFO	##:	8	BattleShip		97			1			75		50		East		0		6			30		15			0
+INFO	##:	9	BattleShip		96			1			71		51		SouthEast	5		6			30		15			0
+INFO	##:	11	Cruiser			50			2			104		17		West		0		3			3		15			0
+INFO	##:	12	Destroyer		23			2			120		30		SouthWest	2		0			6		30			0
+INFO	##:	13	Destroyer		30			2			77		25		West		0		0			4		28			0
+INFO	##:	15	MissileCutter	10			2			117		28		West		0		20			0		0			0
+INFO	##:	16	RepairBoat		25			2			103		12		SouthWest	0		0			0		0			6
+INFO	##:	17	BattleShip		68			2			119		21		SouthEast	2		6			30		15			0
+INFO	##:	18	BattleShip		100			2			113		15		NorthWest	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	42	0		102		10		102				10
+INFO	##:	43	0		105		14		105				14
+INFO	##:	44	0		116		29		117				28
+INFO	##:	49	0		78		31		76				32
+INFO	##:	54	0		87		30		76				32
+INFO	##:	56	0		87		26		76				32
+INFO	##:	63	0		102		17		102				17
+INFO	##:	64	0		97		28		82				26
+INFO	##:	65	0		101		37		77				50
+INFO	##:	66	0		72		36		77				25
+INFO	##:	67	0		97		23		89				29
+INFO	##:	68	2		89		29		89				29
+INFO	##:	69	0		107		28		89				29
+INFO	##:	70	0		109		32		77				50
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			68		45		SouthEast	0		11			3		15			0
+INFO	##:	2	Cruiser			30			1			55		15		SouthEast	0		15			3		15			0
+INFO	##:	6	MissileCutter	10			1			87		21		South		5		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			56		2		NorthEast	2		0			0		0			0
+INFO	##:	8	BattleShip		97			1			75		50		East		0		1			30		15			0
+INFO	##:	9	BattleShip		96			1			73		49		SouthEast	3		6			30		15			0
+INFO	##:	11	Cruiser			54			2			104		17		West		0		1			3		15			0
+INFO	##:	12	Destroyer		23			2			120		28		South		2		0			6		30			0
+INFO	##:	13	Destroyer		30			2			77		25		West		0		0			4		26			0
+INFO	##:	16	RepairBoat		25			2			103		12		SouthWest	0		0			0		0			4
+INFO	##:	17	BattleShip		68			2			119		19		South		2		6			30		15			0
+INFO	##:	18	BattleShip		68			2			111		17		NorthWest	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	44	0		117		28		117				28
+INFO	##:	49	0		76		32		76				32
+INFO	##:	54	0		77		31		76				32
+INFO	##:	56	0		78		31		76				32
+INFO	##:	64	0		87		27		82				26
+INFO	##:	65	0		93		41		77				50
+INFO	##:	66	0		76		27		77				25
+INFO	##:	67	0		89		29		89				29
+INFO	##:	69	0		97		28		89				29
+INFO	##:	70	0		101		37		77				50
+INFO	##:	71	0		72		36		77				25
+INFO	##:	72	0		75		40		77				25
+INFO	##:	73	0		81		43		104				17
+INFO	##:	74	0		83		46		117				28
+INFO	##:	75	0		80		42		103				12
+INFO	##:	76	0		95		21		90				23
+INFO	##:	77	1		87		24		87				24
+INFO	##:	78	0		107		27		90				23
+INFO	##:	79	0		109		32		75				50
+INFO	##:	80	3		104		17		104				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			68		45		SouthEast	0		9			3		15			0
+INFO	##:	2	Cruiser			30			1			55		15		South		0		15			3		15			0
+INFO	##:	6	MissileCutter	10			1			90		18		SouthEast	5		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			58		4		NorthEast	4		0			0		0			0
+INFO	##:	8	BattleShip		97			1			75		50		East		0		0			30		15			0
+INFO	##:	9	BattleShip		96			1			73		49		SouthEast	1		6			30		15			0
+INFO	##:	11	Cruiser			58			2			104		17		West		0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			119		27		SouthWest	2		0			6		30			0
+INFO	##:	16	RepairBoat		25			2			103		12		SouthWest	0		0			0		0			2
+INFO	##:	17	BattleShip		68			2			118		18		SouthWest	2		6			30		15			0
+INFO	##:	18	BattleShip		68			2			111		17		North		0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	54	0		76		32		76				32
+INFO	##:	56	0		76		32		76				32
+INFO	##:	64	0		82		26		82				26
+INFO	##:	65	0		85		46		77				50
+INFO	##:	66	0		77		25		77				25
+INFO	##:	69	0		89		29		89				29
+INFO	##:	70	0		93		41		77				50
+INFO	##:	71	0		76		27		77				25
+INFO	##:	72	0		76		30		77				25
+INFO	##:	73	0		87		36		104				17
+INFO	##:	74	0		91		42		117				28
+INFO	##:	75	0		86		34		103				12
+INFO	##:	76	0		90		23		90				23
+INFO	##:	78	0		97		25		90				23
+INFO	##:	79	0		101		36		75				50
+INFO	##:	81	0		72		36		77				25
+INFO	##:	82	0		75		40		77				25
+INFO	##:	83	0		94		17		87				16
+INFO	##:	84	1		84		19		84				19
+INFO	##:	85	3		104		17		104				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			68		45		SouthEast	0		7			3		15			0
+INFO	##:	2	Cruiser			30			1			55		15		SouthWest	0		15			3		15			0
+INFO	##:	6	MissileCutter	10			1			95		18		East		5		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			61		7		NorthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			75		50		SouthEast	0		0			30		15			0
+INFO	##:	9	BattleShip		96			1			73		49		SouthEast	0		6			30		15			0
+INFO	##:	11	Cruiser			62			2			104		17		NorthWest	0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			119		25		South		2		0			6		30			0
+INFO	##:	16	RepairBoat		25			2			103		12		SouthWest	0		0			0		0			0
+INFO	##:	17	BattleShip		68			2			118		18		SouthWest	0		6			30		15			0
+INFO	##:	18	BattleShip		68			2			111		17		NorthEast	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	65	0		77		50		77				50
+INFO	##:	70	0		85		46		77				50
+INFO	##:	71	0		77		25		77				25
+INFO	##:	72	0		77		25		77				25
+INFO	##:	73	0		93		29		104				17
+INFO	##:	74	0		99		38		117				28
+INFO	##:	75	0		92		26		103				12
+INFO	##:	78	0		90		23		90				23
+INFO	##:	79	0		93		40		75				50
+INFO	##:	81	0		76		27		77				25
+INFO	##:	82	0		76		30		77				25
+INFO	##:	83	0		87		16		87				16
+INFO	##:	86	0		76		39		104				17
+INFO	##:	87	3		104		17		104				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			70		43		SouthEast	3		7			3		15			0
+INFO	##:	2	Cruiser			30			1			54		14		SouthWest	2		15			3		15			0
+INFO	##:	6	MissileCutter	10			1			105		18		East		10		0			0		0			0
+INFO	##:	7	RepairBoat		18			1			64		10		NorthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			76		49		SouthEast	2		0			30		15			0
+INFO	##:	9	BattleShip		96			1			73		49		SouthEast	0		2			30		15			0
+INFO	##:	11	Cruiser			50			2			103		18		NorthWest	0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			118		24		SouthWest	2		0			6		30			0
+INFO	##:	16	RepairBoat		25			2			103		12		South		0		0			0		0			0
+INFO	##:	17	BattleShip		68			2			118		18		SouthWest	0		4			30		15			0
+INFO	##:	18	BattleShip		68			2			111		17		East		0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	70	0		77		50		77				50
+INFO	##:	73	0		99		22		104				17
+INFO	##:	74	0		108		33		117				28
+INFO	##:	75	0		98		18		103				12
+INFO	##:	79	0		84		45		75				50
+INFO	##:	81	0		77		25		77				25
+INFO	##:	82	0		77		25		77				25
+INFO	##:	86	0		84		33		104				17
+INFO	##:	88	0		80		42		104				17
+INFO	##:	89	0		79		42		103				12
+INFO	##:	90	0		80		43		111				17
+INFO	##:	91	0		108		18		100				18
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			70		43		SouthEast	0		7			3		15			0
+INFO	##:	2	Cruiser			30			1			54		12		South		2		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			67		13		NorthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			78		47		SouthEast	4		0			30		15			0
+INFO	##:	9	BattleShip		96			1			73		49		SouthEast	0		0			30		15			0
+INFO	##:	11	Cruiser			50			2			103		18		West		0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			116		24		West		2		0			6		30			0
+INFO	##:	17	BattleShip		68			2			118		18		SouthWest	0		2			30		15			0
+INFO	##:	18	BattleShip		68			2			111		17		SouthEast	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	73	0		104		17		104				17
+INFO	##:	74	0		117		28		117				28
+INFO	##:	75	0		103		12		103				12
+INFO	##:	79	0		75		50		75				50
+INFO	##:	86	0		92		27		104				17
+INFO	##:	88	0		87		35		104				17
+INFO	##:	89	0		85		35		103				12
+INFO	##:	90	0		87		37		111				17
+INFO	##:	91	0		100		18		100				18
+INFO	##:	92	0		79		42		103				18
+INFO	##:	93	0		79		42		103				12
+INFO	##:	94	0		115		18		115				18
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			70		43		SouthEast	0		5			3		15			0
+INFO	##:	2	Cruiser			30			1			55		11		SouthEast	2		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			67		18		North		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			82		43		SouthEast	6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			74		48		SouthEast	2		0			30		15			0
+INFO	##:	11	Cruiser			50			2			103		18		SouthWest	0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			115		23		SouthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		68			2			118		18		West		0		2			30		15			0
+INFO	##:	18	BattleShip		68			2			112		16		SouthEast	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	86	0		100		21		104				17
+INFO	##:	88	0		94		28		104				17
+INFO	##:	89	0		91		28		103				12
+INFO	##:	90	0		94		31		111				17
+INFO	##:	92	0		86		35		103				18
+INFO	##:	93	0		85		35		103				12
+INFO	##:	95	0		78		37		103				18
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			70		43		SouthEast	0		3			3		15			0
+INFO	##:	2	Cruiser			30			1			57		11		East		2		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			67		23		North		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			82		37		South		6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			76		46		SouthEast	4		0			30		15			0
+INFO	##:	11	Cruiser			50			2			102		17		SouthWest	2		0			3		15			0
+INFO	##:	12	Destroyer		23			2			115		21		South		2		0			6		30			0
+INFO	##:	17	BattleShip		68			2			118		18		West		0		0			30		15			0
+INFO	##:	18	BattleShip		68			2			112		14		South		2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	86	0		104		17		104				17
+INFO	##:	88	0		101		21		104				17
+INFO	##:	89	0		97		20		103				12
+INFO	##:	90	0		101		25		111				17
+INFO	##:	92	0		93		28		103				18
+INFO	##:	93	0		91		28		103				12
+INFO	##:	95	0		86		31		103				18
+INFO	##:	96	0		78		37		103				18
+INFO	##:	97	0		110		23		85				40
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			70		43		SouthEast	0		1			3		15			0
+INFO	##:	2	Cruiser			30			1			58		12		NorthEast	2		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			70		26		NorthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			78		33		SouthWest	6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			80		42		SouthEast	6		0			30		15			0
+INFO	##:	11	Cruiser			50			2			100		17		West		2		0			3		15			0
+INFO	##:	12	Destroyer		23			2			114		20		SouthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		68			2			118		18		NorthWest	0		0			30		15			0
+INFO	##:	18	BattleShip		68			2			111		13		SouthWest	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	88	0		104		17		104				17
+INFO	##:	89	0		103		12		103				12
+INFO	##:	90	0		109		19		111				17
+INFO	##:	92	0		100		21		103				18
+INFO	##:	93	0		97		20		103				12
+INFO	##:	95	0		94		25		103				18
+INFO	##:	96	0		86		31		103				18
+INFO	##:	97	0		102		28		85				40
+INFO	##:	98	0		77		37		101				16
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			70		43		SouthEast	0		0			3		15			0
+INFO	##:	2	Cruiser			30			1			61		15		NorthEast	5		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			70		31		North		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			78		27		South		6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			80		36		South		6		0			30		15			0
+INFO	##:	11	Cruiser			50			2			99		16		SouthWest	2		0			3		15			0
+INFO	##:	12	Destroyer		23			2			112		20		West		2		0			6		30			0
+INFO	##:	17	BattleShip		68			2			117		19		NorthWest	2		0			30		15			0
+INFO	##:	18	BattleShip		68			2			109		13		West		2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	90	0		111		17		111				17
+INFO	##:	92	0		103		18		103				18
+INFO	##:	93	0		103		12		103				12
+INFO	##:	95	0		102		19		103				18
+INFO	##:	96	0		94		25		103				18
+INFO	##:	97	0		94		34		85				40
+INFO	##:	98	0		84		31		101				16
+INFO	##:	99	0		77		37		98				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			72		41		SouthEast	3		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	2		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			73		34		NorthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			82		23		SouthEast	6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			80		32		South		4		0			30		15			0
+INFO	##:	11	Cruiser			50			2			97		16		West		2		0			3		15			0
+INFO	##:	12	Destroyer		23			2			111		19		SouthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			116		20		NorthWest	0		0			30		15			0
+INFO	##:	18	BattleShip		68			2			108		12		SouthWest	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	95	0		103		18		103				18
+INFO	##:	96	0		102		19		103				18
+INFO	##:	97	0		85		40		85				40
+INFO	##:	98	0		91		25		101				16
+INFO	##:	99	0		84		31		98				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			76		37		SouthEast	6		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		15			3		15			0
+INFO	##:	7	RepairBoat		18			1			78		34		East		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			86		19		SouthEast	6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			78		30		SouthWest	4		0			30		15			0
+INFO	##:	11	Cruiser			50			2			96		17		NorthWest	2		0			3		15			0
+INFO	##:	12	Destroyer		23			2			109		19		West		2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			116		20		North		0		0			30		15			0
+INFO	##:	18	BattleShip		68			2			106		12		West		2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	96	0		103		18		103				18
+INFO	##:	98	0		98		19		101				16
+INFO	##:	99	0		91		24		98				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			81		32		SouthEast	8		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		13			3		15			0
+INFO	##:	7	RepairBoat		18			1			81		31		SouthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			86		13		South		6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			78		26		South		4		0			30		15			0
+INFO	##:	11	Cruiser			50			2			93		20		NorthWest	5		0			3		15			0
+INFO	##:	12	Destroyer		23			2			108		18		SouthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			116		20		NorthEast	0		0			30		15			0
+INFO	##:	18	BattleShip		68			2			105		13		NorthWest	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	98	0		101		16		101				16
+INFO	##:	99	0		98		17		98				17
+INFO	##:	100	0		72		16		95				18
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			81		24		South		8		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		11			3		15			0
+INFO	##:	7	RepairBoat		18			1			81		26		South		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			90		9		SouthEast	6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			80		24		SouthEast	4		0			30		15			0
+INFO	##:	11	Cruiser			18			2			91		22		NorthWest	0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			106		18		West		2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			116		20		East		0		0			30		15			0
+INFO	##:	18	BattleShip		36			2			103		15		NorthWest	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	100	0		82		16		95				18
+INFO	##:	101	0		72		18		91				22
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			86		19		SouthEast	8		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		9			3		15			0
+INFO	##:	7	RepairBoat		18			1			78		23		SouthWest	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			96		9		East		6		0			30		15			0
+INFO	##:	9	BattleShip		96			1			84		20		SouthEast	6		0			30		15			0
+INFO	##:	11	Cruiser			18			2			91		22		West		0		0			3		15			0
+INFO	##:	12	Destroyer		23			2			105		19		NorthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			116		20		SouthEast	0		0			30		15			0
+INFO	##:	18	BattleShip		36			2			103		15		West		0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	100	0		92		17		95				18
+INFO	##:	101	0		82		20		91				22
+INFO	##:	102	0		72		18		91				22
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			86		11		South		8		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		7			3		15			0
+INFO	##:	7	RepairBoat		18			1			78		18		South		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			100		9		East		4		0			30		15			0
+INFO	##:	9	BattleShip		96			1			84		14		South		6		0			30		15			0
+INFO	##:	12	Destroyer		23			2			103		19		West		2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			117		19		SouthEast	2		0			30		15			0
+INFO	##:	18	BattleShip		36			2			103		15		SouthWest	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	100	0		95		18		95				18
+INFO	##:	101	0		91		22		91				22
+INFO	##:	102	0		82		20		91				22
+INFO	##:	103	0		72		18		91				22
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			86		6		South		5		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		5			3		15			0
+INFO	##:	7	RepairBoat		18			1			81		15		SouthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			102		9		East		2		0			30		15			0
+INFO	##:	9	BattleShip		96			1			88		10		SouthEast	6		0			30		15			0
+INFO	##:	12	Destroyer		23			2			102		18		SouthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			117		17		South		2		0			30		15			0
+INFO	##:	18	BattleShip		36			2			102		14		SouthWest	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	102	0		91		22		91				22
+INFO	##:	103	0		82		20		91				22
+INFO	##:	104	0		72		16		101				19
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			86		4		South		2		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		3			3		15			0
+INFO	##:	7	RepairBoat		18			1			84		12		SouthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			102		9		East		0		0			30		15			0
+INFO	##:	9	BattleShip		96			1			94		10		East		6		0			30		15			0
+INFO	##:	12	Destroyer		23			2			98		14		SouthWest	6		0			6		30			0
+INFO	##:	17	BattleShip		36			2			116		16		SouthWest	2		0			30		15			0
+INFO	##:	18	BattleShip		36			2			100		12		SouthWest	4		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	103	0		91		22		91				22
+INFO	##:	104	0		82		17		101				19
+INFO	##:	105	0		72		16		101				17
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			87		3		SouthEast	2		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		1			3		15			0
+INFO	##:	7	RepairBoat		18			1			87		9		SouthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			102		9		East		0		0			30		12			0
+INFO	##:	9	BattleShip		96			1			98		6		SouthEast	6		0			30		15			0
+INFO	##:	12	Destroyer		23			2			97		13		SouthWest	2		0			6		30			0
+INFO	##:	17	BattleShip		36			2			114		14		SouthWest	4		0			30		15			0
+INFO	##:	18	BattleShip		36			2			99		11		SouthWest	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	104	0		92		18		101				19
+INFO	##:	105	0		82		16		101				17
+INFO	##:	106	0		72		15		94				10
+INFO	##:	107	1		98		10		98				10
+INFO	##:	108	1		94		10		94				10
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			89		3		East		2		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		NorthEast	0		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			92		9		East		5		0			0		0			0
+INFO	##:	8	BattleShip		97			1			102		9		East		0		0			30		9			0
+INFO	##:	9	BattleShip		96			1			100		4		SouthEast	4		0			30		15			0
+INFO	##:	12	Destroyer		23			2			97		13		SouthWest	0		0			6		30			0
+INFO	##:	17	BattleShip		36			2			110		10		SouthWest	6		0			30		15			0
+INFO	##:	18	BattleShip		36			2			99		11		SouthWest	0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	104	0		101		19		101				19
+INFO	##:	105	0		92		16		101				17
+INFO	##:	106	0		82		13		94				10
+INFO	##:	109	0		72		15		96				12
+INFO	##:	110	1		98		10		98				10
+INFO	##:	111	1		96		12		96				12
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			89		3		East		0		0			3		15			0
+INFO	##:	2	Cruiser			30			1			62		16		East		0		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			95		6		SouthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		61			1			102		9		East		0		0			30		5			0
+INFO	##:	9	BattleShip		96			1			101		3		SouthEast	2		0			30		15			0
+INFO	##:	12	Destroyer		5			2			97		13		SouthWest	0		0			6		26			0
+INFO	##:	17	BattleShip		36			2			104		10		West		6		0			30		15			0
+INFO	##:	18	BattleShip		18			2			99		11		SouthWest	0		0			30		11			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	105	0		101		17		101				17
+INFO	##:	106	0		92		11		94				10
+INFO	##:	109	0		82		14		96				12
+INFO	##:	112	1		99		11		99				11
+INFO	##:	113	1		97		13		97				13
+INFO	##:	114	1		106		6		106				6
+INFO	##:	115	1		97		9		97				9
+INFO	##:	116	1		102		9		102				9
+INFO	##:	117	1		101		4		101				4
+INFO	##:	118	1		102		9		102				9
+INFO	##:	119	1		97		9		97				9
+INFO	##:	120	1		102		2		102				2
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			89		3		East		0		0			1		15			0
+INFO	##:	2	Cruiser			30			1			62		16		SouthEast	0		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			100		6		East		5		0			0		0			0
+INFO	##:	8	BattleShip		25			1			102		9		East		0		0			30		1			0
+INFO	##:	9	BattleShip		96			1			101		3		SouthEast	0		0			30		15			0
+INFO	##:	17	BattleShip		36			2			100		10		West		4		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	106	0		94		10		94				10
+INFO	##:	109	0		92		13		96				12
+INFO	##:	121	2		97		13		97				13
+INFO	##:	122	1		98		10		98				10
+INFO	##:	123	1		99		11		99				11
+INFO	##:	124	1		97		13		97				13
+INFO	##:	125	1		102		9		102				9
+INFO	##:	126	1		98		3		98				3
+INFO	##:	127	1		101		4		101				4
+INFO	##:	128	1		102		9		102				9
+INFO	##:	129	1		98		3		98				3
+INFO	##:	130	1		102		2		102				2
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			89		3		East		0		0			0		15			0
+INFO	##:	2	Cruiser			30			1			64		14		SouthEast	3		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			103		9		NorthEast	5		0			0		0			0
+INFO	##:	8	BattleShip		25			1			102		9		East		0		0			30		0			0
+INFO	##:	9	BattleShip		96			1			101		3		SouthEast	0		0			30		13			0
+INFO	##:	17	BattleShip		36			2			98		10		West		2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	109	0		96		12		96				12
+INFO	##:	131	2		96		10		96				10
+INFO	##:	132	1		96		10		96				10
+INFO	##:	133	1		96		10		96				10
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			89		3		NorthEast	0		0			0		15			0
+INFO	##:	2	Cruiser			30			1			68		10		SouthEast	6		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			103		14		North		5		0			0		0			0
+INFO	##:	8	BattleShip		25			1			102		9		East		0		0			28		0			0
+INFO	##:	9	BattleShip		96			1			101		3		SouthEast	0		0			30		11			0
+INFO	##:	17	BattleShip		36			2			98		10		West		0		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	134	2		96		10		96				10
+INFO	##:	135	1		96		10		96				10
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			91		5		NorthEast	3		0			0		15			0
+INFO	##:	2	Cruiser			30			1			74		10		East		6		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			100		17		NorthWest	5		0			0		0			0
+INFO	##:	8	BattleShip		7			1			102		9		East		0		0			26		0			0
+INFO	##:	9	BattleShip		78			1			101		3		SouthEast	0		0			30		9			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	136	2		98		10		98				10
+INFO	##:	137	1		98		10		98				10
+INFO	##:	138	1		102		9		102				9
+INFO	##:	139	1		103		19		103				19
+INFO	##:	140	1		101		3		101				3
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	1	Cruiser			70			1			91		8		North		3		0			0		15			0
+INFO	##:	2	Cruiser			30			1			78		14		NorthEast	6		0			3		15			0
+INFO	##:	7	RepairBoat		18			1			95		17		West		5		0			0		0			0
+INFO	##:	8	BattleShip		7			1			102		9		NorthEast	0		0			26		0			0
+INFO	##:	9	BattleShip		78			1			101		3		South		0		0			30		9			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Connection state changed to NotConnected
+INFO	##:	Connection terminated
+INFO	##:	Closing connection 10.0.2.15:22881
+INFO	##:	Connection terminated
+INFO	##:	Closing connection 10.0.2.15:22881
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+INFO	##:	Strategy 1 win
+oyer		8			1			121		36		SouthWest	2		0			6		30			0
+INFO	##:	10	Cruiser			46			2			81		47		South		6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			148		85		West		2		0			3		15			0
+INFO	##:	13	Destroyer		2			2			127		38		SouthWest	0		0			3		26			0
+INFO	##:	17	BattleShip		18			2			115		68		SouthEast	2		0			17		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	169	1		122		35		122				35
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	4	Destroyer		8			1			121		34		South		2		0			6		30			0
+INFO	##:	10	Cruiser			46			2			77		43		SouthWest	6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			147		86		NorthWest	2		0			3		15			0
+INFO	##:	13	Destroyer		2			2			127		38		SouthWest	0		0			3		24			0
+INFO	##:	17	BattleShip		18			2			117		66		SouthEast	4		0			17		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	170	1		120		35		120				35
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	4	Destroyer		8			1			120		33		SouthWest	2		0			6		30			0
+INFO	##:	10	Cruiser			46			2			77		37		South		6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			145		86		West		2		0			3		15			0
+INFO	##:	13	Destroyer		2			2			127		38		SouthWest	0		0			3		22			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	171	1		121		32		121				32
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	4	Destroyer		8			1			120		31		South		2		0			6		30			0
+INFO	##:	10	Cruiser			46			2			81		33		SouthEast	6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			144		87		NorthWest	2		0			3		15			0
+INFO	##:	13	Destroyer		2			2			127		38		SouthWest	0		0			3		20			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	172	1		119		32		119				32
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	4	Destroyer		8			1			119		30		SouthWest	2		0			6		30			0
+INFO	##:	10	Cruiser			46			2			81		27		South		6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			142		87		West		2		0			3		15			0
+INFO	##:	13	Destroyer		2			2			127		38		SouthWest	0		0			3		18			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	173	1		121		30		121				30
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	4	Destroyer		8			1			119		30		SouthWest	0		0			6		30			0
+INFO	##:	10	Cruiser			46			2			85		23		SouthEast	6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			141		86		SouthWest	2		0			3		15			0
+INFO	##:	13	Destroyer		2			2			127		38		SouthWest	0		0			1		18			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	174	2		118		29		118				29
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	10	Cruiser			46			2			85		17		South		6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			138		83		SouthWest	5		0			3		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	175	2		127		38		127				38
+INFO	##:	176	2		119		30		119				30
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	10	Cruiser			46			2			89		13		SouthEast	6		0			0		15			0
+INFO	##:	11	Cruiser			14			2			133		83		West		5		0			3		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Connection state changed to NotConnected
+INFO	##:	Connection terminated
+INFO	##:	Closing connection 10.0.2.15:22881
+INFO	##:	Connection terminated
+INFO	##:	Closing connection 10.0.2.15:22881
+##:	3	Destroyer		9			1			130		24		NorthWest	0		0			0		19			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			82		41		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			121		43		NorthWest	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			87		26		SouthEast	2		0			3		15			0
+INFO	##:	3	Destroyer		9			1			128		26		NorthWest	4		0			0		19			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			81		40		SouthWest	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			121		46		North		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			87		24		South		2		0			3		15			0
+INFO	##:	3	Destroyer		9			1			123		31		NorthWest	8		0			0		19			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			81		38		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			119		48		NorthWest	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			88		23		SouthEast	2		0			3		15			0
+INFO	##:	3	Destroyer		9			1			121		33		NorthWest	4		0			0		19			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			82		37		SouthEast	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			119		51		North		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			88		21		South		2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	2		0			0		0			0
+INFO	##:	8	BattleShip		20			1			82		35		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			117		53		NorthWest	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			89		20		SouthEast	2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			81		34		SouthWest	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			117		56		North		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			91		20		East		2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			81		32		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			119		58		NorthEast	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			92		19		SouthEast	2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			82		31		SouthEast	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			119		61		North		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			92		17		South		2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			82		29		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			121		63		NorthEast	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			93		16		SouthEast	2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			83		28		SouthEast	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			121		66		North		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			95		16		East		2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			83		26		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			123		68		NorthEast	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			46			1			96		17		NorthEast	2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			84		25		SouthEast	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			126		68		East		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			26			1			98		19		NorthEast	0		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			84		23		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			128		70		NorthEast	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			26			1			98		19		East		0		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			85		22		SouthEast	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			131		70		East		3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			26			1			98		19		SouthEast	0		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			85		20		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			133		68		SouthEast	3		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			26			1			98		19		South		0		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			86		19		SouthEast	2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			133		68		SouthEast	1		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			26			1			98		19		SouthWest	0		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			86		17		South		2		0			30		15			0
+INFO	##:	16	RepairBoat		7			2			133		67		South		1		0			0		0			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Ships state changed to:
+INFO	##:	id	type			resource	strategyId	posX	posY	direction	speed	missiles	shells	torpedoes	repair
+INFO	##:	2	Cruiser			26			1			97		18		SouthWest	2		0			3		15			0
+INFO	##:	7	RepairBoat		23			1			122		49		SouthWest	0		0			0		0			0
+INFO	##:	8	BattleShip		20			1			87		16		SouthEast	2		0			30		15			0
+INFO	##:	New shots:
+INFO	##:	id	type	posX	posY	destinationX	destinationY
+INFO	##:	Connection state changed to NotConnected
+INFO	##:	Connection terminated
+INFO	##:	Closing connection 10.0.2.15:22881
+INFO	##:	Connection terminated
+INFO	##:	Closing connection 10.0.2.15:22881

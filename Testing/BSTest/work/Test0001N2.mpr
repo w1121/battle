@@ -1,0 +1,17 @@
+mscdocument Test0001N2;
+msc Test0001N2/*["C:\Work\Testing\BSTest\mpr\Test0001.mpr",1,5,14]*/;
+Simulator: instance;
+Strategy: instance;
+Simulator: out InitDataComplete,1 to Strategy/*[0,5]*/;
+Strategy: in InitDataComplete,1 from Simulator/*[0,6]*/;
+Simulator: out ShipsCurrentState,2(1, (: (. 1, 1, REPAIR_BOAT, 15, SOUTH_EAST, 70, (. 13, 15 .), (: 15, 15, 3, 0 :) .) :)) to Strategy/*[0,7]*/;
+Strategy: in ShipsCurrentState,2(1, (: (. 1, 1, REPAIR_BOAT, 15, SOUTH_EAST, 70, (. 13, 15 .), (: 15, 15, 3, 0 :) .) :)) from Simulator/*[0,8]*/;
+Simulator: out StartSimulation,3(0) to Strategy/*[0,9]*/;
+Strategy: in StartSimulation,3(0) from Simulator/*[0,10]*/;
+Strategy: out OrderTurnRequest,4(1, 1, LEFT) to Simulator/*[0,11]*/;
+Simulator: in OrderTurnRequest,4(1, 1, LEFT) from Strategy/*[0,12]*/;
+Strategy: out FinishSimulation,5(0, 1) to Simulator/*[0,13]*/;
+Simulator: in FinishSimulation,5(0, 1) from Strategy/*[0,14]*/;
+Simulator: endinstance;
+Strategy: endinstance;
+endmsc;

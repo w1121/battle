@@ -1,0 +1,14 @@
+
+USERTARGET = Model_env$(sctOEXTENSION)
+USERLIBRARIES =
+
+Model_env$(sctOEXTENSION): Model_env.c Model.ifc
+	$(sctCC) @<<
+	$(sctCPPFLAGS) $(sctCCFLAGS)
+	$(sctIFDEF)
+	/FoModel_env$(sctOEXTENSION)
+	Model_env.c
+<<
+
+clean_user_objs:
+	$(sctRM) $(USERTARGET)

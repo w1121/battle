@@ -1,0 +1,16 @@
+mscdocument Test0022N0;
+msc Test0022N0;
+Simulator: instance;
+Strategy: instance;
+Simulator: out /*{@0}*/InitDataComplete,1 to Strategy;
+Strategy: in /*{@0}*/InitDataComplete,1 from Simulator;
+Simulator: out /*{@0}*/ShipsCurrentState,2(1,(: (. 1, 1, 1, 0, 4, 20, (. 10, 10 .), (: 0, 0, 0, 0 :) .), (. 2, 1, 4, 0, 4, 25, (. 12, 10 .), (: 0, 0, 0, 10 :) .), (. 3, 1, 1, 0, 4, 5, (. 15, 10 .), (: 0, 0, 0, 0 :) .) :)) to Strategy;
+Strategy: in /*{@0}*/ShipsCurrentState,2(1,(: (. 1, 1, 1, 0, 4, 20, (. 10, 10 .), (: 0, 0, 0, 0 :) .), (. 2, 1, 4, 0, 4, 25, (. 12, 10 .), (: 0, 0, 0, 10 :) .), (. 3, 1, 1, 0, 4, 5, (. 15, 10 .), (: 0, 0, 0, 0 :) .) :)) from Simulator;
+Simulator: out /*{@0}*/VisibleShip,3(1,(: (. 1, 2, 4, 0, 7, (. 25, 25 .) .) :)) to Strategy;
+Strategy: in /*{@0}*/VisibleShip,3(1,(: (. 1, 2, 4, 0, 7, (. 25, 25 .) .) :)) from Simulator;
+Simulator: out /*{@0}*/StartSimulation,4(0) to Strategy;
+Strategy: in /*{@0}*/StartSimulation,4(0) from Simulator;
+all: condition /*{@4091}*/ERROR comment '<!TAT_ERR_TIMEOUT(Trace0,Event5)!>';
+Simulator: endinstance;
+Strategy: endinstance;
+endmsc;

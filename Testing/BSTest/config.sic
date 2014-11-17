@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<TATPROJECT name="" info="" title="" user="" leader="">
+  <CONFIG name="default" base="" comment="">
+    <INSTANCES>
+      <INSTANCE annotation="" comment="" name="Strategy" priority="100" type="model"/>
+      <INSTANCE annotation="" comment="" name="Simulator" priority="100" type="env"/>
+    </INSTANCES>
+    <SIGNALS>
+      <SIGNAL annotation="" comment="" name="FinishSimulation" paramstype="C" type="out" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderSpeedRequest" paramstype="C" type="out" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param3" type="float"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderTurnRequest" paramstype="C" type="out" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param3" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderFireRequest" paramstype="C" type="out" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param3" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param4" type="tStringShotsList"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="InitDataComplete" paramstype="C" type="in"/>
+      <SIGNAL annotation="" comment="" name="StartSimulation" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="DestroyShip" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param3" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderSpeedResponse" paramstype="C" type="in">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderSpeedReject" paramstype="C" type="in">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderTurnResponse" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderTurnReject" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderFireResponse" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="OrderFireReject" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="ShipsCurrentState" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="tStringShipCurrentState"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="VisibleShip" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+        <PARAMETER annotation="" comment="" field="Param2" type="tStringEnemyShip"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="StrategyVictory" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="StrategyLose" paramstype="C" type="in" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="int"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="messageLog" paramstype="C" type="out" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="SDL_Charstring"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="messageError" paramstype="C" type="out" priority="">
+        <PARAMETER annotation="" comment="" field="Param1" type="SDL_Charstring"/>
+      </SIGNAL>
+      <SIGNAL annotation="" comment="" name="resetStrategy" paramstype="C" type="in" priority=""/>
+    </SIGNALS>
+    <DATATYPE>
+      <TYPEDEF name="tCoordinates" type="struct" paramstype="SDL" dimension="" comment="" annotation="" prefix="" dataclass="">
+        <MEMBER name="x" type="int"/>
+        <MEMBER name="y" type="int"/>
+      </TYPEDEF>
+      <TYPEDEF name="tWeaponryCharacter" type="struct" paramstype="SDL">
+        <MEMBER name="Power" type="int"/>
+        <MEMBER name="Range" type="int"/>
+        <MEMBER name="Speed" type="int"/>
+      </TYPEDEF>
+      <TYPEDEF name="tShipCharacter" type="struct" paramstype="SDL" dimension="" comment="" annotation="" prefix="" dataclass="">
+        <MEMBER name="Range" type="int"/>
+        <MEMBER name="MaxSpeed" type="int"/>
+        <MEMBER name="MaxAcceleration" type="int"/>
+        <MEMBER name="MaxResource" type="int"/>
+        <MEMBER name="MaxAmmunition" type="tArrayAmountAmmunition"/>
+        <MEMBER name="MaxLaunchUnit" type="tArrayAmountLaunchUnit"/>
+        <MEMBER name="MaxDeep" type="int"/>
+      </TYPEDEF>
+      <TYPEDEF name="tShipCurrentState" type="struct" paramstype="SDL" dimension="" comment="" annotation="" prefix="" dataclass="">
+        <MEMBER name="ShipId" type="int"/>
+        <MEMBER name="StrategyId" type="int"/>
+        <MEMBER name="TypeShip" type="int"/>
+        <MEMBER name="Speed" type="int"/>
+        <MEMBER name="Heading" type="int"/>
+        <MEMBER name="Resource" type="int"/>
+        <MEMBER name="Coordinates" type="tCoordinates"/>
+        <MEMBER name="Ammunition" type="tArrayAmountAmmunition"/>
+      </TYPEDEF>
+      <TYPEDEF name="tEnemyShip" type="struct" paramstype="SDL">
+        <MEMBER name="ShipId" type="int"/>
+        <MEMBER name="StrategyId" type="int"/>
+        <MEMBER name="TypeShip" type="int"/>
+        <MEMBER name="Speed" type="int"/>
+        <MEMBER name="Heading" type="int"/>
+        <MEMBER name="Coordinates" type="tCoordinates"/>
+      </TYPEDEF>
+      <TYPEDEF name="tArrayWeaponryCharacter" type="tWeaponryCharacter" dimension="4" paramstype="SDL"/>
+      <TYPEDEF name="tArrayShipsCharacter" type="tShipCharacter" dimension="5" paramstype="SDL"/>
+      <TYPEDEF name="tArrayAmountAmmunition" type="int" dimension="4" paramstype="SDL"/>
+      <TYPEDEF name="tArrayAmountLaunchUnit" type="int" dimension="4" paramstype="SDL" comment="" annotation="" prefix="" dataclass=""/>
+      <TYPEDEF name="tStringShipCurrentState" type="tShipCurrentState" dimension="string" paramstype="SDL"/>
+      <TYPEDEF name="tStringEnemyShip" type="tEnemyShip" dimension="string" paramstype="SDL"/>
+      <TYPEDEF name="tStringShotsList" type="tCoordinates" dimension="string" paramstype="SDL" comment="" annotation="" prefix="" dataclass=""/>
+    </DATATYPE>
+    <MACROS>
+      <MACRO name="#ship_type" type="list" vector="" replace="replace" datatype="id" comment="" annotation="" priority="" research="" priolist="">
+        <VALUELIST condition="" comment="" annotation="">
+          <VALUE value="CRUISER"/>
+          <VALUE value="DESTROYER"/>
+          <VALUE value="REPAIR_BOAT"/>
+        </VALUELIST>
+      </MACRO>
+      <MACRO name="#speed" type="list" vector="" replace="replace" datatype="number" comment="" annotation="" priority="" research="" priolist="">
+        <VALUELIST condition="#ship_type==CRUISER" comment="" annotation="">
+          <VALUE value="5"/>
+        </VALUELIST>
+        <VALUELIST condition="#ship_type==DESTROYER" comment="" annotation="">
+          <VALUE value="10"/>
+        </VALUELIST>
+        <VALUELIST condition="#ship_type==REPAIR_BOAT" comment="" annotation="">
+          <VALUE value="15"/>
+        </VALUELIST>
+      </MACRO>
+    </MACROS>
+    <AXIOMS initialstate=""/>
+  </CONFIG>
+  <SPECFILES>
+    <SET name="mpr" type="">
+      <FILE path="mpr/Test0001.mpr"/>
+      <FILE path="mpr/Test0008.mpr"/>
+      <FILE path="mpr/Test0014.mpr"/>
+      <FILE path="mpr/Test0022.mpr"/>
+      <FILE path="mpr/Test0032.mpr"/>
+    </SET>
+  </SPECFILES>
+  <TOOLS>
+    <TOOL name="macroprc" path="$env(SIC_PATH)/bin/macroprc.exe" configscript="$env(SIC_PATH)/scripts/macroprc.tcl" ispipe="">
+      <TOOLCONFIG name="default" options="">
+        <ATTRIBUTE comment="cname" value="default"/>
+        <ATTRIBUTE comment="ignorenf" value="!"/>
+        <ATTRIBUTE comment="il" value="?"/>
+        <ATTRIBUTE comment="ul" value="?"/>
+        <ATTRIBUTE comment="glob" value="?"/>
+        <ATTRIBUTE comment="iar" value="?"/>
+        <ATTRIBUTE comment="plaindir" value="?"/>
+      </TOOLCONFIG>
+    </TOOL>
+    <TOOL name="atsgen" path="$env(SIC_PATH)/bin/atsgen.exe" configscript="$env(SIC_PATH)/scripts/atsgen.tcl" ispipe="0">
+      <TOOLCONFIG name="default" options="">
+        <ATTRIBUTE comment="incl" value="types.h model.ifc"/>
+        <ATTRIBUTE comment="cname" value="default"/>
+        <ATTRIBUTE comment="tt" value="?"/>
+        <ATTRIBUTE comment="asn1" value="?"/>
+        <ATTRIBUTE comment="optexc" value="!"/>
+        <ATTRIBUTE comment="state" value="?"/>
+        <ATTRIBUTE comment="mf" value="?"/>
+        <ATTRIBUTE comment="nia" value="?"/>
+        <ATTRIBUTE comment="nic" value="?"/>
+      </TOOLCONFIG>
+    </TOOL>
+    <TOOL name="cgtc" path="$env(SIC_PATH)/bin/cgtc.tcl" configscript="$env(SIC_PATH)/scripts/cgtc.tcl" ispipe="">
+      <TOOLCONFIG name="default" options="">
+        <ATTRIBUTE comment="break" value="?"/>
+        <ATTRIBUTE comment="inst" value="?"/>
+        <ATTRIBUTE comment="log" value="?"/>
+        <ATTRIBUTE comment="qcheck" value="!"/>
+        <ATTRIBUTE comment="time" value="?"/>
+        <ATTRIBUTE comment="wrapper" value="?"/>
+        <ATTRIBUTE comment="sdl" value="1"/>
+        <ATTRIBUTE comment="reset" value="resetStrategy"/>
+      </TOOLCONFIG>
+    </TOOL>
+    <TOOL name="cl" path="cl.exe" configscript="$env(SIC_PATH)/scripts/cl.tcl" ispipe="">
+      <TOOLCONFIG name="default" options="">
+        <ATTRIBUTE comment="misc" value="$env(SIC_PATH)/cgtc/testkern.c $env(SIC_PATH)/cgtc/txtlog.c $env(SIC_PATH)/cgtc/mprlog.c $env(BATTLESHIPS)/Strategy/target/BasicTypes.c $env(BATTLESHIPS)/Strategy/target/ctypes.c $env(BATTLESHIPS)/Strategy/target/Model.c $env(BATTLESHIPS)/Source/MapFunctions.c $env(BATTLESHIPS)/Source/ExternalFunction.c $env(TELELOGIC_SDL_DIR)/sdt/sdtdir/wini386/include/sctsdl.c $env(TELELOGIC_SDL_DIR)/sdt/sdtdir/wini386/include/sctpred.c $env(TELELOGIC_SDL_DIR)/sdt/sdtdir/wini386/include/sctos.c /I $env(SIC_PATH)/cgtc /I ${env(TELELOGIC_SDL_DIR)}/sdt/sdtdir/wini386/include /I $env(BATTLESHIPS)/Strategy/target /I test /I . /D _Windows /D IC86 /D SCTAPPLCLENV /D XUSE_GENERIC_FUNC /D XIDNAMES /D XNRINST /D XUSER_CLOCK_FUNC /D TAT_TIME_SUPPORT /D TAT_INSTANCE_SUPPORT /D XNO_VERSION_CHECK"/>
+      </TOOLCONFIG>
+    </TOOL>
+    <TOOL name="run" path="" configscript="$env(SIC_PATH)/scripts/exec.tcl" ispipe=""/>
+    <TOOL name="full_execution" path="" configscript="" ispipe="1">
+      <INPUT name="MPR" type="FILE_LIST"/>
+      <EXEC name="macroprc" toolconfig="default">
+        <ATTACHIN to="INPUT_FILE_LIST" from="MPR" value=""/>
+        <ATTACHOUT from="OUTPUT_FILE_LIST" to="CHAN_1" value="work/macroprc.lst"/>
+      </EXEC>
+      <EXEC name="atsgen" toolconfig="default">
+        <ATTACHIN to="MPR_FILE_LIST" from="CHAN_1" value=""/>
+        <ATTACHOUT from="TCL_FILE" to="CHAN_0" value="work/battleshipstest.tcl"/>
+      </EXEC>
+      <EXEC name="cgtc" toolconfig="default">
+        <ATTACHIN to="TCL_FILE" from="CHAN_0" value=""/>
+        <ATTACHOUT from="ANSIC_FILE" to="CHAN_2" value="test/*.c"/>
+      </EXEC>
+      <EXEC name="cl" toolconfig="default">
+        <ATTACHIN to="ANSIC_FILE" from="CHAN_2" value=""/>
+        <ATTACHOUT from="EXE_FILE" to="CHAN_3" value="test/battleshipstest.exe"/>
+      </EXEC>
+      <EXEC name="run" toolconfig="">
+        <ATTACHIN to="EXEC_FILE" from="CHAN_3" value=""/>
+        <ATTACHOUT from="VERDICT" to="VERDICT" value="verdict/battleshipstest.txt"/>
+      </EXEC>
+      <OUTPUT name="VERDICT" type="FILE"/>
+    </TOOL>
+  </TOOLS>
+  <TESTSUITE>
+    <TESTCASE name="testcase0">
+      <PIPE isexec="1" name="full_execution">
+        <DATAIN name="MPR" value="mpr.lst"/>
+        <DATAOUT name="VERDICT" value="verdict/battleshipstest.txt"/>
+      </PIPE>
+    </TESTCASE>
+  </TESTSUITE>
+</TATPROJECT>

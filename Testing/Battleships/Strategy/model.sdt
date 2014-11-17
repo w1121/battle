@@ -1,0 +1,90 @@
+SDT-SYSTEM-6.2
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+TargetDirectory=target
+[DIAGRAMS]
+0 11 ctypes C:\Telelogic\SDL_TTCN_Suite6.2\sdt\include\ADT\ctypes.sun 0 1223018708 ctypes ""
+0 11 BasicTypes ..\Packages\BasicTypes.sun 0 1096640646 BasicTypes ""
+1 51 ConfigFile ..\Config\ConfigFile.pr 0 1050572051 ConfigFile ""
+1 19 h2i ..\Packages\h2i.sop 0 1049108512 h2i ""
+1 19 i2h ..\Packages\i2h.sop 0 1049108530 i2h ""
+1 19 d2i ..\Packages\d2i.sop 0 1049108542 d2i ""
+1 19 i2d ..\Packages\i2d.sop 0 1049107378 i2d ""
+1 19 nw2i ..\Packages\nw2i.sop 0 1049108556 nw2i ""
+1 19 i2nw ..\Packages\i2nw.sop 0 1049107962 i2nw ""
+1 19 ns2i ..\Packages\ns2i.sop 0 1049108024 ns2i ""
+1 19 i2ns ..\Packages\i2ns.sop 0 1049108156 i2ns ""
+0 1 Model Model.ssy 8 1096640066 Model ""
+1 2 Strategy Strategy.sbk 0 1112366394 Strategy ""
+2 5 Main Main.spr 0 1096641650 Main ""
+3 6 UpdateShipParams UpdateShipParams.spd 0 1050428974 UpdateShipParams ""
+3 6 EnemyCenter EnemyCenter.spd 0 1050152054 EnemyCenter ""
+3 6 StrategyStep StrategyStep.spd 0 1051958926 StrategyStep ""
+4 6 SolveCollision SolveCollision.spd 0 1050583774 SolveCollision ""
+4 6 isCollision isCollision.spd 0 1051712278 isCollision ""
+4 6 NewHeadingChange NewHeading.spd 0 1051712942 NewHeadingChange ""
+5 6 CosBetweenVectors CosBetweenVectors.spd 0 1053425788 CosBerweenVectors ""
+4 6 NextDirection NextDirection.spd 0 1049978880 NextDirection ""
+4 6 NextPosition NextPosition.spd 0 1051973250 NextPosition ""
+4 6 NextShipState NextShipState.spd 0 1051708240 NextShipState ""
+4 6 EnemyNotFound EnemyNotFound.spd 0 1051700432 EnemyNotFound ""
+4 6 EnemyFound EnemyFound.spd 0 1051962798 EnemyFound ""
+5 6 ActivateREPAIR ActivateREPAIR.spd 0 1050506708 ActivateREPAIR ""
+5 6 CanShootEnemyCenter CanShootEnemyCenter.spd 0 1050506772 CanShootEnemyCenter ""
+5 6 SortShootList SortShootList.spd 0 1050056054 SortShootList ""
+4 6 OutputOrder OutputOrder.spd 0 1050414014 OutputOrder ""
+4 6 FindStartPoint FindStartPoint.spd 0 1051188786 FindStartPoint ""
+4 6 FindHeadingTarget SearchHeadingTarget.spd 0 1050139838 FindHeadingTarget ""
+4 6 OnLand OnLand.spd 0 1052225642 OnLand ""
+2 5 Sim Sim.spr 0 1346867445 Sim ""
+[VIEWOPTIONS]
+ShowDirectories=True
+ShowLongMenus=True
+[ANALYSEROPTIONS]
+CaseSensitiveSDL=True
+ASN1KeywordFile=False
+ASN1Parameter=False
+CoderBufferInSDL=Octet-String
+Filter=False
+InstanceFile=False
+SynonymFileName=""
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[STATEMATRIXOPTIONS]
+[INDEXOPTIONS]
+ShowSelectedTypes=True
+ShowSelectedUses=True
+ShowSelectedDiagrams=True
+FilterTypes=
+FilterUses=
+FilterDiagrams=
+NameFirst=True
+IndexAppearance=
+[PACKAGEGENERATOROPTIONS]
+DuplicateFile=
+[MAKEOPTIONS]
+CCompilerDriver=False
+CompileAndLink=False
+GenerateEnvFunctions=True
+GenerateEnvHeader=True
+GenerateSignalNumbers=True
+Kernel=sctamdebcom
+MakefileMode=UserDefined
+TargetLanguage=Cadvanced
+UserMakefile=D:\Home\Institute\Teaching\Prog\Battleships\Strategy\Model.m
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterFile=""
+PrintFrom=0
+PrintTo=0
+PrintToFile=False

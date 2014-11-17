@@ -1,0 +1,44 @@
+N	Description
+----------------------------------------------------
+1	Structure nesting (3 levels)
+2	Array nesting (3 levels)
+3	Array nesting (3 levels, variable dimension)
+4	Null-terminated strings
+5	Variable size array of structures with 3 members:
+		variable-size array of integers
+		array of integers
+		integer
+6	Variable size array of structures with 3 members:
+		variable-size array of null-terminated strings
+		array of null-terminated strings
+		null-terminated string
+7	Variable size array of integers
+8	Variable size array of null-terminated strings
+9	Array of structures with 3 members:
+		variable-size array of integers
+		array of integers
+		integer
+10	Array of structures with 3 members:
+		variable-size array of null-terminated strings
+		array of null-terminated strings
+		null-terminated string
+11	Array of integers
+12	Array of null-terminated strings
+13	Structure with 3 members:
+		variable-size array of integers
+		array of integers
+		integer
+14	Structure with 3 members:
+		variable-size array of null-terminated strings
+		array of null-terminated strings
+		null-terminated string
+15	List of integers
+16	Nested lists (3 levels)
+17	List of structures with 3 members:
+		variable-size array of integers
+		array of integers
+		integer
+18	List of structures with 3 members:
+		variable-size array of null-terminated strings
+		array of null-terminated strings
+		null-terminated string

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TATPROJECT info="" leader="" name="" title="" user="" version="" workdir="" >
+ <CONFIG base="" comment="" name="default" >
+  <INSTANCES>
+   <INSTANCE annotation="" comment="" name="IUT" priority="100" type="model" />
+   <INSTANCE annotation="" comment="" name="Test" priority="100" type="env" />
+  </INSTANCES>
+  <SIGNALS>
+   <SIGNAL annotation="" comment="" name="A" paramstype="C" type="in">
+    <PARAMETER annotation="" comment="" field="Param1" type="ComplexData" />
+   </SIGNAL>
+   <SIGNAL annotation="" comment="" name="B" paramstype="C" type="out">
+    <PARAMETER annotation="" comment="" field="Param1" type="ComplexData" />
+   </SIGNAL>
+  </SIGNALS>
+  <DATATYPE>
+   <TYPEDEF name="ComplexData" type="struct" >
+    <MEMBER name="mStrPtr" type="char*" dimension="var" />
+    <MEMBER name="mStrArr" type="char*" dimension="2" />
+    <MEMBER name="mStr" type="char*" />
+   </TYPEDEF>
+  </DATATYPE>
+ </CONFIG>
+</TATPROJECT>

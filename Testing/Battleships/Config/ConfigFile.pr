@@ -1,0 +1,22 @@
+synonym MaxXCoordinate Integer = 200;
+synonym MaxYCoordinate Integer = 100;
+
+synonym MaxWCPower Integer = 30;
+synonym MaxWCRange Integer = 50;
+synonym MaxWCSpeed Integer = 30;
+
+synonym MaxSCRange Integer = 100;
+synonym MaxSCMaxSpeed Integer = 10;
+synonym MaxSCMaxAcceleration Integer = 5;
+synonym MaxSCMaxResource Integer = 100;
+
+synonym MaxAAWeaponry Integer = 30;
+synonym MaxLUWeaponry Integer = 5;
+
+synonym MaxTypeBattleship Integer = 2;
+synonym MaxTypeCruiser Integer = 2;
+synonym MaxTypeDestroyer Integer = 2;
+synonym MaxTypeMissileCutter Integer = 2;
+synonym MaxTypeRepairBoat Integer = 1;
+
+synonym AmountStrategy Integer = 2;

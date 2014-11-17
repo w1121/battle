@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TATPROJECT info="" leader="" name="" title="" user="" version="" workdir="" >
+ <CONFIG base="" comment="" name="default" >
+  <INSTANCES>
+   <INSTANCE annotation="" comment="" name="IUT" priority="100" type="model" />
+   <INSTANCE annotation="" comment="" name="Test" priority="100" type="env" />
+  </INSTANCES>
+  <SIGNALS>
+   <SIGNAL annotation="" comment="" name="A" paramstype="C" type="in">
+    <PARAMETER annotation="" comment="" field="Param1" type="Struct3" />
+   </SIGNAL>
+   <SIGNAL annotation="" comment="" name="B" paramstype="C" type="out">
+    <PARAMETER annotation="" comment="" field="Param1" type="Struct3" />
+   </SIGNAL>
+  </SIGNALS>
+  <DATATYPE>
+   <TYPEDEF name="Struct1" type="struct" dimension="">
+    <MEMBER name="a" type="int" dimension=""/>
+    <MEMBER name="b" type="int" dimension=""/>
+   </TYPEDEF>
+   <TYPEDEF name="Struct2" type="struct" dimension="">
+    <MEMBER name="a" type="Struct1" dimension=""/>
+    <MEMBER name="b" type="Struct1"/>
+   </TYPEDEF>
+   <TYPEDEF name="Struct3" type="struct">
+    <MEMBER name="a" type="Struct2"/>
+    <MEMBER name="b" type="Struct2"/>
+   </TYPEDEF>
+  </DATATYPE>
+ </CONFIG>
+</TATPROJECT>

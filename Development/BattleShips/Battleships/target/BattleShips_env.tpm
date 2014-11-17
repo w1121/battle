@@ -1,0 +1,22 @@
+
+USERTARGET = BattleShips_env$(sctOEXTENSION) BattleShips_cod$(sctOEXTENSION)
+USERLIBRARIES =
+
+BattleShips_env$(sctOEXTENSION): BattleShips_env.c BattleShips.ifc BattleShips_cod.h
+	$(sctCC) @<<
+	$(sctCPPFLAGS) $(sctCCFLAGS)
+	$(sctIFDEF)
+	/FoBattleShips_env$(sctOEXTENSION)
+	BattleShips_env.c
+<<
+
+BattleShips_cod$(sctOEXTENSION) : BattleShips_cod.c BattleShips_cod.h
+	$(sctCC) @<<
+	$(sctCPPFLAGS) $(sctCCFLAGS)
+	$(sctIFDEF)
+	/FoBattleShips_cod$(sctOEXTENSION)
+	BattleShips_cod.c
+<<
+
+clean_user_objs:
+	$(sctRM) $(USERTARGET)

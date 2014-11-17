@@ -1,0 +1,11 @@
+mscdocument test;
+msc test;
+IUT: instance;
+Test: instance;
+Test: out /*{@0}*/A,1("Hello","World") to IUT;
+IUT: in /*{@0}*/A,1("Hello","World") from Test;
+IUT: out /*{@0}*/B,2("World","Hello") to Test;
+Test: in /*{@0}*/B,2("World","Hello") from IUT;
+IUT: endinstance;
+Test: endinstance;
+endmsc;

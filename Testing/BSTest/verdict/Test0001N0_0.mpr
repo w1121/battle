@@ -1,0 +1,14 @@
+mscdocument Test0001N0;
+msc Test0001N0;
+Simulator: instance;
+Strategy: instance;
+Simulator: out /*{@0}*/InitDataComplete,1 to Strategy;
+Strategy: in /*{@0}*/InitDataComplete,1 from Simulator;
+Simulator: out /*{@0}*/ShipsCurrentState,2(1,(: (. 1, 1, 1, 5, 3, 70, (. 13, 15 .), (: 15, 15, 3, 0 :) .) :)) to Strategy;
+Strategy: in /*{@0}*/ShipsCurrentState,2(1,(: (. 1, 1, 1, 5, 3, 70, (. 13, 15 .), (: 15, 15, 3, 0 :) .) :)) from Simulator;
+Simulator: out /*{@0}*/StartSimulation,3(0) to Strategy;
+Strategy: in /*{@0}*/StartSimulation,3(0) from Simulator;
+all: condition /*{@4090}*/ERROR comment '<!TAT_ERR_TIMEOUT(Trace0,Event4)!>';
+Simulator: endinstance;
+Strategy: endinstance;
+endmsc;

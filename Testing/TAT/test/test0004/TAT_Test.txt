@@ -1,0 +1,5 @@
+RMRK: Test case test started. (Iteration:0)
+{000000}[0005] SEND: A("Hello","World") <Test->IUT>
+{000000}[0007] RECV: B("World","Hello") <IUT->Test>
+RMRK: Test test finished. Status=TAT_OK (Iteration: 0)
+

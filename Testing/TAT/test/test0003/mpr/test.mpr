@@ -1,0 +1,16 @@
+mscdocument Untitled;
+msc Untitled;
+Test: instance;
+IUT: instance;
+text 'def Array3 res';
+Test: out A,1((:(:(:1,2:),(:3,4:):),(:(:5,6:),(:7,8:):):)) to IUT;
+IUT: in A,1((:(:(:1,2:),(:3,4:):),(:(:5,6:),(:7,8:):):)) from Test;
+IUT: out B,2(&res:{(:(:(:8,7:),(:6,5:):),(:(:4,3:),(:2,1:):):)}) to Test;
+Test: in B,2(&res:{(:(:(:8,7:),(:6,5:):),(:(:4,3:),(:2,1:):):)}) from IUT;
+Test: out A,3(res) to IUT;
+IUT: in A,3(res) from Test;
+IUT: out B,4((:(:(:1,2:),(:3,4:):),(:(:5,6:),(:7,8:):):)) to Test;
+Test: in B,4((:(:(:1,2:),(:3,4:):),(:(:5,6:),(:7,8:):):)) from IUT;
+Test: endinstance;
+IUT: endinstance;
+endmsc;

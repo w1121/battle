@@ -1,0 +1,15 @@
+mscdocument test;
+msc test;
+IUT: instance;
+Test: instance;
+Test: out /*{@0}*/A,1((: "qwe", "rty", "uiop" :)) to IUT;
+IUT: in /*{@0}*/A,1((: "qwe", "rty", "uiop" :)) from Test;
+IUT: out /*{@0}*/B,2((: "qwe", "rty", "uiop" :)) to Test;
+Test: in /*{@0}*/B,2((: "qwe", "rty", "uiop" :)) from IUT;
+Test: out /*{@0}*/A,3((: "qwe", "rty", "uiop" :)) to IUT;
+IUT: in /*{@0}*/A,3((: "qwe", "rty", "uiop" :)) from Test;
+IUT: out /*{@0}*/B,4((: "qwe", "rty", "uiop" :)) to Test;
+Test: in /*{@0}*/B,4((: "qwe", "rty", "uiop" :)) from IUT;
+IUT: endinstance;
+Test: endinstance;
+endmsc;

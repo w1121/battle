@@ -1,0 +1,123 @@
+SDT-SYSTEM-4.4
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+SourceDirectory=D:\Battleships\Simulator\
+TargetDirectory=D:\Battleships\Simulator\target\
+[DIAGRAMS]
+0 11 ctypes D:\Telelogic\SDL_TTCN_Suite4.4\sdt\include\ADT\ctypes.sun 0 998118682 ctypes ""
+0 11 BasicTypes ..\Packages\BasicTypes.sun 0 1050911134 BasicTypes ""
+1 51 ConfigFile ..\Config\ConfigFile.pr 0 1051339985 ConfigFile ""
+1 19 h2i ..\Packages\h2i.sop 0 1049101312 h2i ""
+1 19 i2h ..\Packages\i2h.sop 0 1049101330 i2h ""
+1 19 d2i ..\Packages\d2i.sop 0 1049101342 d2i ""
+1 19 i2d ..\Packages\i2d.sop 0 1049100178 i2d ""
+1 19 nw2i ..\Packages\nw2i.sop 0 1049101356 nw2i ""
+1 19 i2nw ..\Packages\i2nw.sop 0 1049100762 i2nw ""
+1 19 ns2i ..\Packages\ns2i.sop 0 1049100824 ns2i ""
+1 19 i2ns ..\Packages\i2ns.sop 0 1049100956 i2ns ""
+0 1 Model Model.ssy 0 1050912878 Model ""
+1 2 Simulator Simulator.sbk 0 1053702754 Simulator ""
+2 5 Main Main.spr 0 1053687658 Main ""
+3 6 InitDataShipsWeaponry InitDataShipsWeaponry.spd 0 1051511106 InitDataShipsWeaponry ""
+3 6 InitStrategyFleet InitStrategyFleet.spd 0 1051607166 InitStrategyFleet ""
+4 6 GetMaxShips GetMaxShips.spd 0 1049907596 GetMaxShips ""
+4 6 GetCoordinate GetCoordinate.spd 0 1051174712 GetCoordinate ""
+5 6 IsBusyPoint IsBusyPoint.spd 0 1051173736 IsBusyPoint ""
+4 6 InitRD InitRD.spd 0 1051098392 InitRD ""
+3 6 SetVisibility SetVisibility.spd 0 1053507592 SetVisibility ""
+4 6 zeroizeVisibility zeroizeVisibility.spd 0 1053507512 zeroizeVisibility ""
+3 6 SendCurrentState SendCurrentState.spd 0 1052844920 SendCurrentState ""
+3 6 SendVisibleShips SendVisibleShips.spd 0 1053503974 SendVisibleShips ""
+3 6 Err2Str Err2Str.spd 0 1051607154 Err2Str ""
+3 6 SimIteration SimIteration.spd 0 1053420370 SimIteration ""
+4 6 NullingSI NullingSI.spd 0 1050480626 NullingSI ""
+4 6 IsASIComplete IsASIComplete.spd 0 1050510396 IsASIComplete ""
+4 6 CheckStrategies CheckStrategies.spd 0 1053703077 CheckStrategies ""
+4 6 NullingShipOrders NullingShipOrders.spd 0 1050508912 NullingShipOrders ""
+4 6 SendResposeOnOrders SendResposeOnOrders.spd 0 1050508984 SendResposeOnOrders ""
+4 6 OrderFire OrderFire.spd 0 1051951742 OrderFire ""
+5 6 GetCurrentCoordinate GetCurrentCoordinate.spd 0 1050590546 GetCurrentCoordinate ""
+5 6 GetProperty GetProperty.spd 0 1051605284 GetProperty ""
+5 6 GetNumberShip GetNumberShip.spd 0 1051601950 GetNumberShip ""
+5 6 GetAmmunition GetAmmunition.spd 0 1051605284 GetAmmunition ""
+5 6 GetLenghtShot GetLenghtShot.spd 0 1051605284 GetLenghtShot ""
+5 6 GetFinishCoordinate GetFinishCoordinate.spd 0 1051695872 GetFinishCoordinate ""
+4 6 OrderTurn OrderTurn.spd 0 1050497784 OrderTurn ""
+4 6 OrderSpeed OrderSpeed.spd 0 1050498048 OrderSpeed ""
+4 6 ChangeCoordinate ChangeCoordinate.spd 0 1053504556 ChangeCoordinate ""
+5 6 ReadHeading ReadHeading.spd 0 1053504550 ReadHeading ""
+6 6 StepCoor StepCoor.spd 0 1053357680 StepCoor ""
+4 6 UpdateShots UpdateShots.spd 0 1053501208 UpdateShots ""
+5 6 SpeedCoor SpeedCoor.spd 0 1053420330 SpeedCoor ""
+4 6 CollisionShip CollisionShip.spd 0 1050579158 CollisionShip ""
+5 6 Collision Collision.spd 0 1051600882 Collision ""
+6 6 abs abs.spd 0 1050138966 abs ""
+5 6 Heading Heading.spd 0 1050487884 Heading ""
+3 6 SetSI SetSI.spd 0 1053510338 SetSI ""
+3 6 KillStrategy KillStrategy.spd 0 1053510330 KillStrategy ""
+3 6 IsWeaponry IsWeaponry.spd 0 1053510274 IsWeaponry ""
+2 5 Router Router.spr 0 1053702428 Router ""
+3 6 SendVisibleShip SendVisibleShip.spd 0 1053701814 Send ""
+3 6 SendShipsCurrentState SendShipsCurrentState.spd 0 1053701843 SendShipsCurrentState ""
+3 6 SendStrategyLose SendStrategyLose.spd 0 1053702085 SendStrategyLose ""
+3 6 SendStrategyVictory SendStrategyVictory.spd 0 1053702056 SendStrategyVictory ""
+3 6 SendOrderFireReject SendOrderFireReject.spd 0 1053702389 SendOrderFireReject ""
+3 6 SendOrderFireResponse SendOrderFireResponse.spd 0 1053702367 SendOrderFireResponse ""
+3 6 SendOrderTurnReject SendOrderTurnReject.spd 0 1053702230 SendOrderTurnReject ""
+3 6 SendOrderTurnResponse SendOrderTurnResponse.spd 0 1053702200 SendOrderTurnResponse ""
+3 6 SendOrderSpeedReject SendOrderSpeedReject.spd 0 1053702168 SendOrderSpeedReject ""
+3 6 SendOrderSpeedResponse SendOrderSpeedResponse.spd 0 1053702145 SendOrderSpeedResponse ""
+3 6 SendOrderSpeedRequest SendOrderSpeedRequest.spd 0 1053702675 SendOrderSpeedRequest ""
+3 6 SendOrderTurnRequest SendOrderTurnRequest.spd 0 1053702720 SendOrderTurnRequest ""
+3 6 SendOrderFireRequest SendOrderFireRequest.spd 0 1053702748 SendOrderFireRequest ""
+3 6 SendFinishSimulation SendFinishSimulation.spd 0 1053702758 SendFinishSimulation ""
+3 6 SendDestroyShip SendDestroyShip.spd 0 1053701886 SendDestroyShip ""
+2 5 DataSender DataSender.spr 0 1053158896 DataSender ""
+3 6 PushShips PushShips.spd 0 1053157474 PushShips ""
+3 6 PushShots PushShots.spd 0 1053159040 PushShots ""
+[VIEWOPTIONS]
+ShowDirectories=True
+ShowLongMenus=True
+[ANALYSEROPTIONS]
+CaseSensitiveSDL=True
+ASN1KeywordFile=False
+ASN1Parameter=False
+CoderBufferInSDL=Octet-String
+Filter=False
+InstanceFile=False
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[STATEMATRIXOPTIONS]
+[INDEXOPTIONS]
+ShowSelectedTypes=True
+ShowSelectedUses=True
+ShowSelectedDiagrams=True
+FilterTypes=
+FilterUses=
+FilterDiagrams=
+NameFirst=True
+IndexAppearance=
+[PACKAGEGENERATOROPTIONS]
+DuplicateFile=
+[MAKEOPTIONS]
+CCompilerDriver=False
+Kernel=SCTAMDEBCOM
+MakefileMode=UserDefined
+TargetLanguage=Cadvanced
+UserMakefile=D:\andrei\prjs\spbspu\battleship\Simulator\Model.m
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterFile=""
+PrintFrom=0
+PrintTo=0
+PrintToFile=False

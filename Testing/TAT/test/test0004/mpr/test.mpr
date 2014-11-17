@@ -1,0 +1,11 @@
+mscdocument Untitled;
+msc Untitled;
+Test: instance;
+IUT: instance;
+Test: out A,1("Hello","World") to IUT;
+IUT: in A,1("Hello","World") from Test;
+IUT: out B,2("World","Hello") to Test;
+Test: in B,2("World","Hello") from IUT;
+Test: endinstance;
+IUT: endinstance;
+endmsc;

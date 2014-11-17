@@ -1,0 +1,2155 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: TclDOM
+Date: Fri, 11 Nov 2005 15:41:02 +0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>TclDOM</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3DISO-8859-1">
+<META content=3D"MSHTML 6.00.2800.1522" name=3DGENERATOR></HEAD>
+<BODY text=3Dblack vLink=3D#840084 aLink=3D#0000ff link=3D#0000ff =
+bgColor=3Dwhite>
+<DIV class=3Drefentry>
+<H1 class=3Dtitle><A name=3Did614542>TclDOM</A></H1>
+<H2>Contents</H2>
+<UL>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#synopsis">Sy=
+nopsis</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Description"=
+>Description</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Packages-and=
+-Namespaces">Packages=20
+  and Namespaces</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Tokens">Toke=
+ns</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Document-and=
+-Node-Commands">Document=20
+  and Node Commands</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#DOM-Interfac=
+es">DOM=20
+  Interfaces</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Convenience-=
+Commands-and-Methods">Convenience=20
+  Commands and Methods</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands">Co=
+mmands</A>
+  <UL>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-::d=
+om::DOMImplementation">::dom::DOMImplementation</A>
+    <UL>
+      <LI><A=20
+      =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-::d=
+om::DOMImplementation-Command-Options">Command=20
+      Options</A></LI></UL>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-::d=
+om::document">::dom::document</A>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-dom=
+::node">dom::node</A>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-dom=
+::element">dom::element</A>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-dom=
+::processinginstruction">dom::processinginstruction</A>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Commands-dom=
+::event">dom::event</A></LI></UL>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Errors">Erro=
+rs</A>
+  <LI><A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Implementati=
+ons">Implementations</A>
+  <UL>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Implementati=
+ons-Tcl-Implementation">Tcl=20
+    Implementation</A>
+    <UL>
+      <LI><A=20
+      =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Implementati=
+ons-Tcl-Implementation-Limitations">Limitations</A></LI></UL>
+    <LI><A=20
+    =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Implementati=
+ons-libxml2-Implementation">libxml2=20
+    Implementation</A>
+    <UL>
+      <LI><A=20
+      =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#Implementati=
+ons-libxml2-Implementation-Limitations">Limitations</A></LI></UL></LI></U=
+L></LI></UL>
+<DIV class=3Drefnamediv>
+<H2>Name</H2>
+<P>::dom::DOMImplementation, ::dom::hasfeature, ::dom::create, =
+::dom::destroy,=20
+::dom::parse, ::dom::serialize, ::dom::document, ::dom::documenttype,=20
+::dom::node, ::dom::element, ::dom::event, ::dom::selectNode, =
+::dom::isNode,=20
+::dom::xinclude, ::dom::prefix2namespaceURI, ::dom::trim =97 Tcl =
+language binding=20
+for the W3C Document Object Model</P></DIV>
+<DIV class=3Drefsynopsisdiv><A name=3Dsynopsis></A>
+<H2>Synopsis</H2>
+<DIV class=3Dtclcmdsynopsis id=3Did752047><A name=3Did752047></A><SPAN =
+class=3Dcommand=20
+id=3Did752049><A name=3Dpackage_require_dom></A><TT =
+class=3Dcommand>package require=20
+dom</TT> </SPAN></DIV><BR><SPAN class=3Dtclpkgsynopsis><PRE>package =
+require dom ?3.1?</PRE></SPAN>
+<DIV class=3Dtclcmdsynopsis id=3Did752084><A name=3Did752084></A><SPAN =
+class=3Dcommand=20
+id=3Did752086><A name=3D__dom__DOMImplementation></A><TT=20
+class=3Dcommand>::dom::DOMImplementation</TT> </SPAN><I=20
+class=3Dreplaceable><TT>method</TT></I> ?args...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752114><A name=3Did752114></A><SPAN =
+class=3Dcommand=20
+id=3Did752116><A name=3D__dom__hasfeature></A><TT=20
+class=3Dcommand>::dom::hasfeature</TT> </SPAN><I=20
+class=3Dreplaceable><TT>feature</TT></I> <I =
+class=3Dreplaceable><TT>version</TT></I>=20
+</DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752141><A name=3Did752141></A><SPAN =
+class=3Dcommand=20
+id=3Did752143><A name=3D__dom__create></A><TT =
+class=3Dcommand>::dom::create</TT>=20
+</SPAN></DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752149><A name=3Did752149></A><SPAN =
+class=3Dcommand=20
+id=3Did752152><A name=3D__dom__destroy></A><TT =
+class=3Dcommand>::dom::destroy</TT>=20
+</SPAN><I class=3Dreplaceable><TT>token</TT></I> </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752167><A name=3Did752167></A><SPAN =
+class=3Dcommand=20
+id=3Did752169><A name=3D__dom__parse></A><TT =
+class=3Dcommand>::dom::parse</TT>=20
+</SPAN><I class=3Dreplaceable><TT>xml</TT></I> ?option value...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752204><A name=3Did752204></A><SPAN =
+class=3Dcommand=20
+id=3Did752206><A name=3D__dom__serialize></A><TT =
+class=3Dcommand>::dom::serialize</TT>=20
+</SPAN><I class=3Dreplaceable><TT>token</TT></I> ?option value...? =
+</DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752241><A name=3Did752241></A><SPAN =
+class=3Dcommand=20
+id=3Did752243><A name=3D__dom__document></A><TT =
+class=3Dcommand>::dom::document</TT>=20
+</SPAN><I class=3Dreplaceable><TT>method</TT></I> <I=20
+class=3Dreplaceable><TT>token</TT></I> ?args...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752280><A name=3Did752280></A><SPAN =
+class=3Dcommand=20
+id=3Did752282><A name=3D__dom__documenttype></A><TT=20
+class=3Dcommand>::dom::documenttype</TT> </SPAN><I=20
+class=3Dreplaceable><TT>method</TT></I> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+?args...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752320><A name=3Did752320></A><SPAN =
+class=3Dcommand=20
+id=3Did752322><A name=3D__dom__node></A><TT =
+class=3Dcommand>::dom::node</TT> </SPAN><I=20
+class=3Dreplaceable><TT>method</TT></I> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+?args...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752359><A name=3Did752359></A><SPAN =
+class=3Dcommand=20
+id=3Did752361><A name=3D__dom__element></A><TT =
+class=3Dcommand>::dom::element</TT>=20
+</SPAN><I class=3Dreplaceable><TT>method</TT></I> <I=20
+class=3Dreplaceable><TT>token</TT></I> ?args...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752398><A name=3Did752398></A><SPAN =
+class=3Dcommand=20
+id=3Did752400><A name=3D__dom__event></A><TT =
+class=3Dcommand>::dom::event</TT>=20
+</SPAN><I class=3Dreplaceable><TT>method</TT></I> <I=20
+class=3Dreplaceable><TT>token</TT></I> ?args...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752437><A name=3Did752437></A><SPAN =
+class=3Dcommand=20
+id=3Did752440><A name=3D__dom__selectNode></A><TT=20
+class=3Dcommand>::dom::selectNode</TT> </SPAN><I=20
+class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>xpath</TT></I>=20
+?option value...? </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752477><A name=3Did752477></A><SPAN =
+class=3Dcommand=20
+id=3Did752479><A name=3D__dom__isNode></A><TT =
+class=3Dcommand>::dom::isNode</TT>=20
+</SPAN><I class=3Dreplaceable><TT>token</TT></I> </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752494><A name=3Did752494></A><SPAN =
+class=3Dcommand=20
+id=3Did752497><A name=3D__dom__xinclude></A><TT =
+class=3Dcommand>::dom::xinclude</TT>=20
+</SPAN><I class=3Dreplaceable><TT>doc</TT></I> </DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752512><A name=3Did752512></A><SPAN =
+class=3Dcommand=20
+id=3Did752514><A name=3D__dom__prefix2namespaceURI></A><TT=20
+class=3Dcommand>::dom::prefix2namespaceURI</TT> </SPAN><I=20
+class=3Dreplaceable><TT>node</TT></I> <I =
+class=3Dreplaceable><TT>prefix</TT></I>=20
+</DIV>
+<DIV class=3Dtclcmdsynopsis id=3Did752539><A name=3Did752539></A><SPAN =
+class=3Dcommand=20
+id=3Did752541><A name=3D__dom__trim></A><TT =
+class=3Dcommand>::dom::trim</TT> </SPAN><I=20
+class=3Dreplaceable><TT>doc</TT></I> </DIV>
+<H3>Tcl Namespace Usage</H3><BR><TT class=3Dtclnamespace>::dom</TT> =
+<BR><TT=20
+class=3Dtclnamespace>::dom::tcl</TT> <BR><TT=20
+class=3Dtclnamespace>::dom::libxml2</TT>=20
+<P></P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752557></A>
+<H2>Description</H2>
+<P>TclDOM is a Tcl language binding for the <A =
+href=3D"http://www.w3c.org/DOM/"=20
+target=3D_top>W3C Document Object Model</A> (DOM). DOM provides a view =
+of a XML=20
+(or HTML) document as a tree structure. Currently, TclDOM only supports =
+XML=20
+documents.</P>
+<P>The package implements most of the DOM Level 1 interfaces and also =
+some Level=20
+2 and Level 3 interfaces. There are also a number of non-standard =
+commands and=20
+methods provided for the convenience of application developers (these =
+are=20
+documented).</P>
+<P>The DOM specification should be read in conjunction with this =
+reference=20
+manual, as it explains the meaning and purpose of the various =
+interfaces. This=20
+manual is not a tutorial on how to use the DOM.</P>
+<P>TclDOM also provides several implementations of the API: a pure-Tcl=20
+implementation, a C implementation (based on TclDOMPro) and another C=20
+implementation based on the Gnome libxml2 library.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752594></A>
+<H2>Packages and Namespaces</H2>
+<P>TclDOM defines the <TT class=3Dtclpackage>dom</TT> package and also a =
+Tcl=20
+namespace using that same name.</P>
+<P>Implementations define their own package name and Tcl namespace =
+within the=20
+<TT class=3Dtclnamespace>::dom</TT> Tcl namespace:</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm>Tcl implementation</SPAN>
+  <DD>
+  <P>Package <TT class=3Dtclpackage>dom::tcl</TT>, Tcl namespace <TT=20
+  class=3Dtclnamespace>::dom::tcl</TT>.</P>
+  <DT><SPAN class=3Dterm>TclDOMPro</SPAN>
+  <DD>
+  <P>Package <TT class=3Dtclpackage>dom::c</TT>, Tcl namespace <TT=20
+  class=3Dtclnamespace>::dom::c</TT>.</P>
+  <DT><SPAN class=3Dterm>libxml2</SPAN>
+  <DD>
+  <P>Package <TT class=3Dtclpackage>dom::libxml2</TT>, Tcl namespace <TT =
+
+  class=3Dtclnamespace>::dom::libxml2</TT>.</P></DD></DL></DIV>
+<P>Each DOM Document is allocated a Tcl namespace within the <TT=20
+class=3Dtclnamespace>::dom</TT> Tcl namespace. All storage for the =
+document and=20
+commands are defined within that Tcl namespace.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752693></A>
+<H2>Tokens</H2>
+<P>The TclDOM API uses <SPAN class=3Demphasis><EM>tokens</EM></SPAN> as=20
+identifiers for nodes within the document tree. This technique has been =
+used to=20
+allow alternate implementations of TclDOM to be efficient, while =
+retaining=20
+compatibility with the pure-Tcl implementation.</P>
+<P>The format of the token itself as well as the data structure referred =
+to by=20
+the token are <SPAN class=3Demphasis><EM>not</EM></SPAN> public and an =
+application=20
+should not rely on these. Instead, an application should use the =
+accessor=20
+methods provided by the API.</P>
+<P>There is no requirement to always use the same token for a node. In =
+fact, an=20
+important performance optimisation for some implementations is to create =
+a new=20
+token when a node is accessed, regardless of whether a token has already =
+been=20
+issued for that node. This implies that in order to test whether two =
+tokens=20
+refer to the same node it is not sufficient to test the string values of =
+the=20
+tokens; the <TT class=3Dtclmethod>isSameNode</TT> method must be used =
+for this=20
+purpose. For example,</P>
+<DIV class=3Dinformalexample><PRE class=3Dprogramlisting>proc =
+NodeCompare1 {A B} {
+    return [string equal $A $B]
+}
+proc NodeCompare2 {A B} {
+    return [$A isSameNode $B]
+}
+</PRE></DIV>
+<P>In the above example, <TT class=3Dliteral>NodeCompare2</TT> correctly =
+
+determines whether its two arguments refer to the same node.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752757></A>
+<H2>Document and Node Commands</H2>
+<P>Each Document and Node has a Tcl command defined that may be used to =
+control=20
+the object. This command may be used to invoke the methods by the <A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__docum=
+ent"><SPAN><B=20
+class=3Dtclcommand>::dom::document</B></SPAN></A> command (for =
+Documents) or the=20
+<A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+class=3Dtclcommand>::dom::node</B></SPAN></A> command (for all other =
+Nodes). If a=20
+Document' or Node's Tcl command is destroyed then the Document or Node =
+is also=20
+destroyed.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752784></A>
+<H2>DOM Interfaces</H2>
+<P>Each <SPAN class=3Demphasis><EM>Interface</EM></SPAN> in the DOM =
+specification=20
+is implemented with a Tcl command in the <TT =
+class=3Dtclnamespace>dom</TT>=20
+namespace. A few interfaces have not been mapped to Tcl commands because =
+Tcl=20
+already provides the required functionality, for example the <TT=20
+class=3Dclassname>CharacterData</TT> interface.</P>
+<P><SPAN class=3Demphasis><EM>method</EM></SPAN>s for interfaces are =
+methods=20
+(subcommands) of the corresponding Tcl command.</P>
+<P>Each <SPAN class=3Demphasis><EM>attribute</EM></SPAN> of an interface =
+is a=20
+configuration option for an object in the document tree.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752824></A>
+<H2>Convenience Commands and Methods</H2>
+<P>DOM doesn't always provide an interface, method or attribute for =
+every=20
+function required. For example, until DOM Level 3 for was no standard =
+for=20
+creating, parsing and serializing a document. Sometimes using the =
+standard DOM=20
+interface is awkward. TclDOM provides a number of non-standard features =
+to=20
+overcome these problems.</P>
+<P>A major convenience is that each method of the <TT=20
+class=3Dclassname>DOMImplementation</TT> interface is also defined as a =
+command.=20
+For example, rather than using <A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__DOMImpl=
+ementation_create"><SPAN><B=20
+class=3Dtclcommand>dom::DOMImplementation create</B></SPAN></A> to =
+create a new=20
+document, the shorter command <A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__create"=
+><SPAN><B=20
+class=3Dtclcommand>dom::create</B></SPAN></A> may be used.</P>
+<P>Implementations may also provide direct access to specific features. =
+Refer to=20
+the documentation for a DOM implementation.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did752866></A>
+<H2>Commands</H2>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did752872></A>
+<H3><A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__DOMIm=
+plementation"><SPAN><B=20
+class=3Dtclcommand>::dom::DOMImplementation</B></SPAN></A></H3>
+<P>The <A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__DOMIm=
+plementation"><SPAN><B=20
+class=3Dtclcommand>::dom::DOMImplementation</B></SPAN></A> command =
+implements the=20
+<TT class=3Dclassname>DOMImplementation</TT> DOM interface. It is used =
+to provide=20
+implementation-specific features not explicitly defined in the DOM=20
+specification.</P>
+<DIV class=3Drefsect3 lang=3Den><A name=3Did752897></A>
+<H4>Command Options</H4>
+<P>The following command options may be used. These are also available =
+as=20
+commands.</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>hasFeature</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did752918><A =
+name=3Did752918></A>hasFeature <I=20
+  class=3Dreplaceable><TT>feature</TT></I> </DIV>
+  <P>Provides a test for existence of a feature. Returns <TT=20
+  class=3Dliteral>1</TT> if a feature is implemented, <TT =
+class=3Dliteral>0</TT>=20
+  otherwise.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>create</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did752967><A =
+name=3Did752967></A>create <I=20
+  class=3Dreplaceable><TT>type</TT></I> </DIV>
+  <P>Creates the root node of a new DOM document. The document element =
+type may=20
+  be specified as an argument, in which case that element is created. =
+The return=20
+  value is a token referring to the root node of the newly created =
+document. A=20
+  Tcl command is also created with the same name as the document's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__docum=
+ent"><SPAN><B=20
+  class=3Dtclcommand>::dom::document</B></SPAN></A> command.</P>
+  <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+  <H3 class=3Dtitle>Note</H3>
+  <P>Non-standard method. DOM Level 2 introduced the <TT=20
+  class=3Dmethodname>createDocument</TT> method.</P></DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createDocument</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753026><A =
+name=3Did753026></A>createDocument <I=20
+  class=3Dreplaceable><TT>nsURI</TT></I> <I =
+class=3Dreplaceable><TT>type</TT></I> <I=20
+  class=3Dreplaceable><TT>doctype</TT></I> </DIV>
+  <P>Creates the root node of a new DOM document. The document element =
+namespace=20
+  URI and local-name (element type) may be specified as an argument, in =
+which=20
+  case that element is created. If the document type is given then the =
+newly=20
+  created document is configured to use that document type. The return =
+value is=20
+  a token referring to the root node of the newly created document. A =
+Tcl=20
+  command is also created with the same name as the document's token. =
+This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__docum=
+ent"><SPAN><B=20
+  class=3Dtclcommand>::dom::document</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createDocumentType</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753092><A =
+name=3Did753092></A>createDocumentType=20
+  <I class=3Dreplaceable><TT>name</TT></I> <I=20
+  class=3Dreplaceable><TT>publicid</TT></I> <I=20
+  class=3Dreplaceable><TT>systemid</TT></I> <I=20
+  class=3Dreplaceable><TT>internaldtd</TT></I> </DIV>
+  <P>Creates a Document Type Declaration. The return value is a token =
+for the=20
+  newly created document type declaration. A Tcl command is also created =
+with=20
+  the same name as the document type's token. This command is a shortcut =
+for the=20
+  <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__docum=
+enttype"><SPAN><B=20
+  class=3Dtclcommand>::dom::documenttype</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>createNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753162><A =
+name=3Did753162></A>createNode <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>xpath</TT></I>=20
+  </DIV>
+  <P>May create a node in the document. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> specifies a context for =
+the XPath=20
+  expression given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>xpath</TT></I></TT>. The expression must =
+resolve to a=20
+  node. If the node exists then no further action is taken. Otherwise =
+the node=20
+  is created. The token of the matched or newly created node is =
+returned.</P>
+  <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+  <H3 class=3Dtitle>Note</H3>
+  <P>Non-standard method.</P></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>destroy</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753226><A =
+name=3Did753226></A>destroy <I=20
+  class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>This method frees all data structures associated with a DOM =
+document or=20
+  node. The <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>=20
+  argument must refer to a valid token for any document or any node in =
+the tree=20
+  of a document.</P>
+  <P>When the given token refers to a DOM document then the entire =
+document is=20
+  destroyed; the Tcl namespace for the document is deleted and all =
+document and=20
+  node commands are deleted. All tokens for the document or nodes in the =
+
+  document become invalid.</P>
+  <P>When the token refers to a node the node is removed from the tree =
+before it=20
+  is destroyed. If the node has children or attributes, they will also =
+be=20
+  destroyed. The Tcl command for the node is deleted.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>isNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753286><A =
+name=3Did753286></A>isNode <I=20
+  class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>Tests whether the given token is a valid token for some DOM =
+node.</P>
+  <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+  <H3 class=3Dtitle>Note</H3>
+  <P>Non-standard method.</P></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>parse</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753328><A name=3Did753328></A>parse =
+<I=20
+  class=3Dreplaceable><TT>xml</TT></I> ?<I =
+class=3Dreplaceable><TT>option</TT></I>=20
+  <I class=3Dreplaceable><TT>value</TT></I>? </DIV>
+  <P>This method parses XML formatted text given by the <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>xml</TT></I></TT> argument and constructs a =
+DOM tree for=20
+  the document. The return result is the token of the root node of the =
+newly=20
+  created document. The document will also have a Tcl command associated =
+with=20
+  it, see the <TT class=3Dtclmethod>createDocument</TT> method.</P>
+  <P>This method uses the <A href=3D"http://tclxml.sourceforge.net/"=20
+  target=3D_top>TclXML</A> package to perform the parsing operation. The =
+<TT=20
+  class=3Dtclpackage>dom</TT> package itself does not include an XML =
+parser.=20
+  TclXML supports the use of multiple parser implementations. The <TT=20
+  class=3Doption>-parser</TT> may be used to specify which XML parser =
+class to=20
+  use.</P>
+  <P>All options not listed below are passed to the TclXML parser.</P>
+  <P>Valid configuration options are:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm>[-parser] [[[{}] | [expat] | [tcl]]]</SPAN>
+    <DD>
+    <P>This option specifies the name of a TclXML parser class to use to =
+parse=20
+    the XML data. The given parser class must be registered with the =
+TclXML=20
+    package. If an empty string is given then the default parser class =
+is used.=20
+    If an explicit value is given and that parser class is not =
+registered then=20
+    the command will fail, despite the fact that another parser may be=20
+    available.</P>
+    <DT><SPAN class=3Dterm>[-progresscommand] [<I=20
+    class=3Dreplaceable><TT>script</TT></I>]</SPAN>
+    <DD>
+    <P>This option specifies a Tcl command to be invoked from time to =
+time while=20
+    the DOM tree is being constructed. The script will be invoked after =
+a=20
+    certain number of element start tags have been processed, given by =
+the <TT=20
+    class=3Doption>-chunksize</TT> option.</P>
+    <DT><SPAN class=3Dterm>[-chunksize] [<I=20
+    class=3Dreplaceable><TT>integer</TT></I>]</SPAN>
+    <DD>
+    <P>This option specifies how many element start tags to process =
+before=20
+    invoking the script given by the <TT =
+class=3Doption>-progresscommand</TT>=20
+    option.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>selectNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753561><A =
+name=3Did753561></A>selectNode <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>xpath</TT></I>=20
+  ?option value...? </DIV>
+  <P>Resolves the XPath location path given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>xpath</TT></I></TT>. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> is the initial context for =
+the=20
+  location path. Returns the resulting nodeset as a (static) Tcl =
+list.</P>
+  <P>The following options may be specified:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-namespaces</TT></SPAN>
+    <DD>
+    <P>The value for this option is a list of prefix-URI pairs. Each of =
+these=20
+    pairs defines an XML Namespace and its prefix for the purposes of =
+evaluating=20
+    the XPath expression. The document itself may use a different prefix =
+for the=20
+    same XML Namespace.</P>
+    <P>This option may be repeated, in which case the lists of namespace =
+pairs=20
+    are merged and all of the XML Namespaces =
+registered.</P></DD></DL></DIV>
+  <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+  <H3 class=3Dtitle>Note</H3>
+  <P>Non-standard method.</P></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>serialize</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753666><A =
+name=3Did753666></A>serialize <I=20
+  class=3Dreplaceable><TT>token</TT></I> ?<I =
+class=3Dreplaceable><TT>option</TT></I>=20
+  <I class=3Dreplaceable><TT>value</TT></I>? </DIV>
+  <P>This method returns the XML formatted text corresponding to the =
+node given=20
+  by <TT class=3Doption>token</TT>. The text is guaranteed to be a =
+well-formed XML=20
+  document, unless the <TT class=3Doption>-method</TT> option specifies =
+a non-XML=20
+  output method.</P>
+  <P>Valid configuration options are:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm>[-method] [xml|html|text]</SPAN>
+    <DD>
+    <P>Specifies how the document tree is to be serialized as text. The =
+allowed=20
+    values correspond to the output methods defined by the XSLT v1.0 W3C =
+
+    Recommendation. The <TT class=3Dliteral>xml</TT> method produces =
+output that=20
+    conforms to the XML syntax. The <TT class=3Dliteral>html</TT> method =
+produces=20
+    output that conforms to HTML syntax. The <TT =
+class=3Dliteral>text</TT> method=20
+    serializes only the text nodes of the document and disables all =
+output=20
+    escaping.</P>
+    <DT><SPAN class=3Dterm>[-indent] [<I=20
+    class=3Dreplaceable><TT>boolean</TT></I>]</SPAN>
+    <DD>
+    <P>Specifies that the output is to be "pretty-printed", ie. element =
+content=20
+    is indented to provide a visual indication of nesting levels.</P>
+    <DT><SPAN class=3Dterm>[-encoding] [<I=20
+    class=3Dreplaceable><TT>encoding</TT></I>]</SPAN>
+    <DD>
+    <P>Specifies that the output is to be encoded using the given =
+character=20
+    encoding. If the encoding is <TT class=3Dliteral>utf-8</TT> (the =
+default) then=20
+    the output is treated as a string within Tcl. If any other encoding =
+is=20
+    specified then the output is treated as a ByteArray object (ie. as=20
+    binary).</P>
+    <DT><SPAN class=3Dterm>[-newline] [<I=20
+    class=3Dreplaceable><TT>elementlist</TT></I>]</SPAN>
+    <DD>
+    <P>This option specifies a list of element types for which newline=20
+    characters will be added before and after the start and end tags for =
+those=20
+    elements upon serialization. This option is deprecated: the =
+[-indent] option=20
+    should be used instead.</P>
+    <P>White space is significant in XML, so the <TT =
+class=3Dtclpackage>dom</TT>=20
+    package never adds extra white space for purposes of =
+"pretty-printing" the=20
+    XML source document. On some platforms, such as VMS, this can =
+actually cause=20
+    serious problems due to line length limitations. This option =
+provides the=20
+    convenience of adding newlines to certain nominated element types =
+for=20
+    formatting the source into lines.</P>
+    <P>Examples:</P>
+    <P>Suppose the following DOM document is constructed:</P>
+    <DIV class=3Dinformalexample><PRE class=3Dprogramlisting>set doc =
+[::dom::DOMImplementation create]
+set top [::dom::document createElement $doc Root]
+set node [::dom::document createElement $top First]
+::dom::document createElement $node Second
+::dom::document createElement $top First
+</PRE></DIV>
+    <P>Without the <TT class=3Doption>-newline</TT> option the =
+serialized document=20
+    would be:</P>
+    <DIV class=3Dinformalexample><PRE =
+class=3Dprogramlisting>::dom::DOMImplementation serialize $doc
+<TT class=3Dcomputeroutput>
+&lt;?xml version=3D"1.0"?&gt;
+&lt;!DOCTYPE Root&gt;
+&lt;Root&gt;&lt;First&gt;&lt;Second/&gt;&lt;/First&gt;&lt;First/&gt;&lt;/=
+Root&gt;
+
+</TT>
+</PRE></DIV>
+    <P>With the <TT class=3Doption>-newline</TT> option the serialized =
+document=20
+    would be:</P>
+    <DIV class=3Dinformalexample><PRE =
+class=3Dprogramlisting>::dom::DOMImplementation serialize $doc -newline =
+First
+<TT class=3Dcomputeroutput>
+&lt;?xml version=3D"1.0"?&gt;
+&lt;!DOCTYPE Root&gt;
+&lt;Root&gt;
+&lt;First&gt;
+&lt;Second/&gt;
+&lt;/First&gt;
+&lt;First/&gt;
+&lt;/Root&gt;
+
+</TT>
+</PRE></DIV></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>trim</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did753979><A name=3Did753979></A>trim =
+<I=20
+  class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>This method removes any node containing only white space from the =
+document=20
+  tree of the node given by <TT class=3Doption><I=20
+  =
+class=3Dreplaceable><TT>token</TT></I></TT>.</P></DD></DL></DIV></DIV></D=
+IV>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did754013></A>
+<H3><A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__docum=
+ent"><SPAN><B=20
+class=3Dtclcommand>::dom::document</B></SPAN></A></H3>
+<P>This command implements the Document interface in the DOM =
+specification. The=20
+most important aspect of this command are its factory methods for =
+creating=20
+nodes.</P>
+<P>The methods accepted by this command are as follows:</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>cget</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754043><A name=3Did754043></A><TT=20
+  class=3Dmethodname>cget</TT> <I class=3Dreplaceable><TT>token</TT></I> =
+-option=20
+  </DIV>
+  <P>This method returns the value of the given configuration =
+option.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>configure</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754082><A name=3Did754082></A><TT=20
+  class=3Dmethodname>configure</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> ?<I=20
+  class=3Dreplaceable><TT>option</TT></I> <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>This method sets the value of the given configuration options.</P>
+  <P>Valid configuration options are:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm>[-doctype]</SPAN>
+    <DD>
+    <P>Specifies the token of the Document Type Declaration node.</P>
+    <P>This is a read-only option. Use the factory method to create a =
+Document=20
+    Type Declaration node.</P>
+    <DT><SPAN class=3Dterm>[-implementation]</SPAN>
+    <DD>
+    <P>Specifies the token of the document's implementation.</P>
+    <P>This is a read-only option.</P>
+    <DT><SPAN class=3Dterm>[-documentElement]</SPAN>
+    <DD>
+    <P>Specifies the token of the document's document element node. A =
+document=20
+    node may only have one document element, but may have other types of =
+
+    children (such as comments).</P>
+    <P>This is a read-only option. Use the factory method to create the =
+document=20
+    element node.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createElement</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754217><A name=3Did754217></A><TT=20
+  class=3Dmethodname>createElement</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>type</TT></I> </DIV>
+  <P>This method creates an element node as a child of the given node =
+specified=20
+  by <TT class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT> =
+and returns=20
+  the new node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+element,=20
+  document or documentFragment. The new, child element is added as the =
+last=20
+  child of <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>'s list=20
+  of children. The new element's type is given by the <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>type</TT></I></TT> argument. The new element =
+is created=20
+  with an empty attribute list.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createElementNS</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754292><A name=3Did754292></A><TT=20
+  class=3Dmethodname>createElementNS</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>nsuri</TT></I> <I=20
+  class=3Dreplaceable><TT>qualname</TT></I> </DIV>
+  <P>This method creates an element node in an XML Namespace as a child =
+of the=20
+  given node specified by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> and returns the new node's =
+token as=20
+  its result. <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT> must=20
+  be a node of type element, document or documentFragment. The new, =
+child=20
+  element is added as the last child of <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>'s list of children. The =
+new element=20
+  is created in the XML Namespace given by the namespace URI <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>nsuri</TT></I></TT>. The new element's =
+qualifed name=20
+  (QName) is given by the <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>qualname</TT></I></TT> argument. Qualified =
+names have=20
+  the form <TT class=3Dliteral>prefix:local-part</TT>. The new element =
+is created=20
+  with an empty attribute list.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createDocumentFragment</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754388><A name=3Did754388></A><TT=20
+  class=3Dmethodname>createDocumentFragment</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>This method creates a documentFragment node as a child of the given =
+node=20
+  specified by <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT> and=20
+  returns the new node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+element,=20
+  document or documentFragment.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createTextNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754442><A name=3Did754442></A><TT=20
+  class=3Dmethodname>createTextNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>text</TT></I> </DIV>
+  <P>This method creates a textNode node as a child of the given node =
+specified=20
+  by <TT class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT> =
+and returns=20
+  the new node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+element,=20
+  document or documentFragment. The new, child textNode is added as the =
+last=20
+  child of <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>'s list=20
+  of children. The new textNode is created with its value set to <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>text</TT></I></TT>.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createComment</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754515><A name=3Did754515></A><TT=20
+  class=3Dmethodname>createComment</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>data</TT></I> </DIV>
+  <P>This method creates a comment node as a child of the given node =
+specified=20
+  by <TT class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT> =
+and returns=20
+  the new node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+element,=20
+  document or documentFragment. The new, child comment is added as the =
+last=20
+  child of <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>'s list=20
+  of children. The new comment is created with its value set to <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>data</TT></I></TT>.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createCDATASection</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754589><A name=3Did754589></A><TT=20
+  class=3Dmethodname>createCDATASection</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>text</TT></I>=20
+  </DIV>
+  <P>TclDOM does not distinguish between textNodes and CDATASection =
+nodes.=20
+  Accordingly, this method creates a textNode node as a child of the =
+given node=20
+  specified by <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT> and=20
+  returns the new node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+element,=20
+  document or documentFragment. The new, child textNode is added as the =
+last=20
+  child of <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>'s list=20
+  of children. The new node is created with its value set to <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>text</TT></I></TT> and has the attribute <TT=20
+  class=3Doption>-cdatasection</TT> set to the value <TT =
+class=3Dliteral>1</TT>.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT=20
+  class=3Dmethodname>createProcessingInstruction</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754674><A name=3Did754674></A><TT=20
+  class=3Dmethodname>createProcessingInstruction</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>target</TT></I>=20
+  <I class=3Dreplaceable><TT>data</TT></I> </DIV>
+  <P>This method creates a processingInstruction node as a child of the =
+given=20
+  node specified by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> and returns the new node's =
+token as=20
+  its result. <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT> must=20
+  be a node of type element, document or documentFragment. The new, =
+child=20
+  processingInstruction is added as the last child of <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>'s list of children. The =
+new node is=20
+  created with its name set to <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>target</TT></I></TT> and its value set to <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>data</TT></I></TT>.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createAttribute</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754762><A name=3Did754762></A><TT=20
+  class=3Dmethodname>createAttribute</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>This method creates an attribute node for the given element =
+specified by=20
+  <TT class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT> and =
+returns the=20
+  new node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+element. The=20
+  new attribute is created with its name set to <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>name</TT></I></TT> and an empty value.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__node"=
+><SPAN><B=20
+  class=3Dtclcommand>::dom::node</B></SPAN></A> command.</P>
+  <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+  <H3 class=3Dtitle>Note</H3>
+  <P>This method is included for completeness with respect to the DOM=20
+  specification. The preferred method for setting element attributes is =
+to use=20
+  the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__eleme=
+nt"><SPAN><B=20
+  class=3Dtclcommand>::dom::element</B></SPAN></A> command.</P></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>createEntity</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754845><A name=3Did754845></A><TT=20
+  class=3Dmethodname>createEntity</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  </DIV>
+  <P>Not currently implemented.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>createEntityReference</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754875><A name=3Did754875></A><TT=20
+  class=3Dmethodname>createEntityReference</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>name</TT></I>=20
+  </DIV>
+  <P>Not currently implemented.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>createEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754914><A name=3Did754914></A><TT=20
+  class=3Dmethodname>createEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>This method creates an event node in the document specified by <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT> and =
+returns the new=20
+  node's token as its result. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> must be a node of type =
+document. The=20
+  event type is specified by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>name</TT></I></TT>.</P>
+  <P>A Tcl command is created with the same name as the new node's =
+token. This=20
+  command is a shortcut for the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__event=
+"><SPAN><B=20
+  class=3Dtclcommand>::dom::event</B></SPAN></A> command.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>getElementsByTagName</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did754981><A name=3Did754981></A><TT=20
+  class=3Dmethodname>getElementsByTagName</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>name</TT></I>=20
+  </DIV>
+  <P>This method searches the node given by the argument <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> for child elements with a =
+type=20
+  matching the argument <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>name</TT></I></TT>. The name <TT =
+class=3Dliteral>*</TT>=20
+  matches all elements. All descendants of <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> are searched. This method =
+returns a=20
+  "live-list"; the return result of this method is the name of a Tcl =
+variable,=20
+  the content of which is a Tcl list containing tokens for all elements =
+that=20
+  match.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>dtd</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755045><A name=3Did755045></A><TT=20
+  class=3Dmethodname>dtd</TT> validate </DIV>
+  <P>This method performs DTD validation upon the document. If the =
+method=20
+  returns successfully, then the document is valid. Otherwise the =
+document is=20
+  invalid and the error returned contains the reason.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>schema</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755077><A name=3Did755077></A><TT=20
+  class=3Dmethodname><I class=3Dreplaceable><TT>submethod</TT></I></TT> =
+?<I=20
+  class=3Dreplaceable><TT>args</TT></I>...? </DIV>
+  <P>This method performs XML Schema validation upon the document. =
+Schema=20
+  validation is performed in two steps. First the document is compiled =
+into a=20
+  schema document. Second, the schema document is used to =
+schema-validate an=20
+  instance document.</P>
+  <P>Example:</P>
+  <DIV class=3Dinformalexample><PRE class=3Dprogramlisting>set schema =
+[dom::parse $XML]
+$schema schema compile
+set instance [dom::parse $XML2]
+$schema schema validate $instance
+</PRE></DIV>
+  <P>If the document is changed after compiling, then schema document =
+must be=20
+  recompiled.</P></DD></DL></DIV></DIV>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did755129></A>
+<H3><A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__node"><=
+SPAN><B=20
+class=3Dtclcommand>dom::node</B></SPAN></A></H3>
+<P>This command implements generic functions for DOM nodes.</P>
+<P>The methods accepted by this command are as follows:</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>cget</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755157><A name=3Did755157></A><TT=20
+  class=3Dmethodname>cget</TT> <I class=3Dreplaceable><TT>token</TT></I> =
+option=20
+  </DIV>
+  <P>This method returns the value of the given configuration option for =
+the=20
+  node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>configure</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755201><A name=3Did755201></A><TT=20
+  class=3Dmethodname>configure</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> ?<I=20
+  class=3Dreplaceable><TT>option</TT></I> <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>This method sets the value of the given configuration option for =
+the node=20
+  given by <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>.</P>
+  <P>Valid configuration options are as follows:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm>[-nodeName]</SPAN>
+    <DD>
+    <P>Returns the node name. This is a read-only option.</P>
+    <P>The DOM specification gives the meaning of names for different =
+types of=20
+    nodes. For example, the <TT class=3Doption>-nodeName</TT> option of =
+an element=20
+    node is the element type.</P>
+    <DT><SPAN class=3Dterm>[-nodeType]</SPAN>
+    <DD>
+    <P>Returns the type of the node given by <TT class=3Doption><I=20
+    class=3Dreplaceable><TT>token</TT></I></TT>. This is a read-only =
+option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-parentNode</TT></SPAN>
+    <DD>
+    <P>Returns the parent node of the node given by <TT =
+class=3Doption><I=20
+    class=3Dreplaceable><TT>token</TT></I></TT>. This is a read-only =
+option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-childNodes</TT></SPAN>
+    <DD>
+    <P>Returns the name of a Tcl variable which contains a list of the =
+children=20
+    of the node given by <TT class=3Doption><I=20
+    class=3Dreplaceable><TT>token</TT></I></TT>. The variable contains =
+the "live"=20
+    list of children. This is a read-only option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-firstChild</TT></SPAN>
+    <DD>
+    <P>Returns the first child node of the node given by <TT =
+class=3Doption><I=20
+    class=3Dreplaceable><TT>token</TT></I></TT>. This is a read-only =
+option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-lastChild</TT></SPAN>
+    <DD>
+    <P>Returns the last child node of the node given by <TT =
+class=3Doption><I=20
+    class=3Dreplaceable><TT>token</TT></I></TT>. This is a read-only =
+option.</P>
+    <DT><SPAN class=3Dterm><TT =
+class=3Doption>-previousSibling</TT></SPAN>
+    <DD>
+    <P>Returns the parent's child node which appears before this node. =
+If this=20
+    child is the first child of its parent then returns an empty string. =
+This is=20
+    a read-only option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-nextSibling</TT></SPAN>
+    <DD>
+    <P>Returns the parent's child node which appears after this node. If =
+this=20
+    child is the last child of its parent then returns an empty string. =
+This is=20
+    a read-only option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-attributes</TT></SPAN>
+    <DD>
+    <P>Returns the name of a Tcl array variable which contains the =
+attribute=20
+    list for an element node. If the node is not an element type node =
+then=20
+    returns an empty string. The indices of the array are attribute =
+names, and=20
+    the values of the array elements are their corresponding attribute =
+values.=20
+    This is a read-only option.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-nodeValue</TT> [<I=20
+    class=3Dreplaceable><TT>data</TT></I>]</SPAN>
+    <DD>
+    <P>Specifies the value of a node. The DOM specification gives the =
+meaning of=20
+    values for different types of nodes. For example, the <TT=20
+    class=3Doption>-nodeValue</TT> option of a textNode node is the =
+node's=20
+    text.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>insertBefore</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755490><A name=3Did755490></A><TT=20
+  class=3Dmethodname>insertBefore</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>newchild</TT></I> <I=20
+  class=3Dreplaceable><TT>refchild</TT></I> </DIV>
+  <P>This method removes the node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>newchild</TT></I></TT> from its parent. If no =
+<TT=20
+  class=3Doption><I class=3Dreplaceable><TT>refchild</TT></I></TT> =
+argument is given=20
+  then <TT class=3Doption><I =
+class=3Dreplaceable><TT>newchild</TT></I></TT> is=20
+  appended to <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>'s=20
+  list of children. If the <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>refchild</TT></I></TT> argument is given then =
+this=20
+  method adds <TT class=3Doption><I =
+class=3Dreplaceable><TT>newchild</TT></I></TT>=20
+  as a child of <TT class=3Doption><I =
+class=3Dreplaceable><TT>token</TT></I></TT>.=20
+  The new child node is positioned before the node <TT class=3Doption><I =
+
+  class=3Dreplaceable><TT>refchild</TT></I></TT> in <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>'s list of children. =
+Returns an empty=20
+  string.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>replaceChild</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755584><A name=3Did755584></A><TT=20
+  class=3Dmethodname>replaceChild</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>newchild</TT></I> <I=20
+  class=3Dreplaceable><TT>oldchild</TT></I> </DIV>
+  <P>This method removes the node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>newchild</TT></I></TT> from its parent. It =
+then also=20
+  removes the node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>oldchild</TT></I></TT> from <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>. <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>newchild</TT></I></TT> is then added as a =
+child of <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT> in <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>oldchild</TT></I></TT>'s =
+original=20
+  position in the list of children. The method returns the token <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>oldchild</TT></I></TT>, =
+which will now=20
+  have no parent.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>removeChild</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755668><A name=3Did755668></A><TT=20
+  class=3Dmethodname>removeChild</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>oldchild</TT></I> </DIV>
+  <P>This method removes the node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>oldchild</TT></I></TT> from its parent, <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>token</TT></I></TT>. The =
+method returns=20
+  the token <TT class=3Doption><I =
+class=3Dreplaceable><TT>oldchild</TT></I></TT>,=20
+  which will now have no parent.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>appendChild</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755723><A name=3Did755723></A><TT=20
+  class=3Dmethodname>appendChild</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>newchild</TT></I> </DIV>
+  <P>This method removes the node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>newchild</TT></I></TT> from its parent. <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>newchild</TT></I></TT> is =
+then appended=20
+  to the end of the list of children for node <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>. The method returns the =
+token <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>newchild</TT></I></TT>.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>hasChildNodes</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755783><A name=3Did755783></A><TT=20
+  class=3Dmethodname>hasChildNodes</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  </DIV>
+  <P>Returns <TT class=3Dliteral>1</TT> if the given node has any child =
+nodes, <TT=20
+  class=3Dliteral>0</TT> otherwise.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>isSameNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755824><A name=3Did755824></A><TT=20
+  class=3Dmethodname>isSameNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>ref</TT></I> </DIV>
+  <P>Returns <TT class=3Dliteral>1</TT> if the given node is the same =
+node as the=20
+  node given by the [<TT class=3Dliteral>ref</TT>] token, <TT =
+class=3Dliteral>0</TT>=20
+  otherwise.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>cloneNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755886><A name=3Did755886></A><TT=20
+  class=3Dmethodname>cloneNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>deep</TT></I> </DIV>
+  <P>This method makes a copy the node given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>. If the argument <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>deep</TT></I></TT> is not specified or has the =
+value <TT=20
+  class=3Dliteral>0</TT> then only the node itself is copied, not its =
+children. If=20
+  the argument <TT class=3Doption><I =
+class=3Dreplaceable><TT>deep</TT></I></TT> has=20
+  the value <TT class=3Dliteral>1</TT> then <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT>'s children are also copied =
+
+  recursively. This method returns the token of the newly created node. =
+This new=20
+  node will have no parent.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>children</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755959><A name=3Did755959></A><TT=20
+  class=3Dmethodname>children</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>This is a convenience method which returns the list of child nodes =
+for the=20
+  given node as a (static) Tcl list.</P>
+  <P>This is not a standard DOM method for this interface.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>parent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did755995><A name=3Did755995></A><TT=20
+  class=3Dmethodname>parent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>This is a convenience method which returns the parent node for the =
+given=20
+  node.</P>
+  <P>This is not a standard DOM method for this interface.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>path</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756030><A name=3Did756030></A><TT=20
+  class=3Dmethodname>path</TT> <I class=3Dreplaceable><TT>token</TT></I> =
+</DIV>
+  <P>Returns a Tcl list of the ancestor nodes of the given node, =
+starting with=20
+  the root node.</P>
+  <P>This is not a standard DOM method for this interface.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>createNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756065><A name=3Did756065></A><TT=20
+  class=3Dmethodname>createNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>xpath</TT></I> </DIV>
+  <P>May create nodes in order to satisfy the given XPath location path. =
+The=20
+  initial context for the location path is the node [<I=20
+  class=3Dreplaceable><TT>token</TT></I>]. For more detail, see the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__creat=
+eNode"><SPAN><B=20
+  class=3Dtclcommand>::dom::createNode</B></SPAN></A> command.</P>
+  <P>This is not a standard DOM method for this interface.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>selectNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756126><A name=3Did756126></A><TT=20
+  class=3Dmethodname>selectNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>xpath</TT></I> </DIV>
+  <P>Returns a (static) Tcl list of nodes selected by the XPath location =
+path=20
+  [<I class=3Dreplaceable><TT>xpath</TT></I>]. The initial context for =
+the=20
+  location path is the node [<I class=3Dreplaceable><TT>token</TT></I>]. =
+For more=20
+  detail, see the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#__dom__selec=
+tNode"><SPAN><B=20
+  class=3Dtclcommand>::dom::selectNode</B></SPAN></A> command.</P>
+  <P>This is not a standard DOM method for this interface.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>stringValue</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756195><A name=3Did756195></A><TT=20
+  class=3Dmethodname>stringValue</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  </DIV>
+  <P>Returns the string value of the node given by [<I=20
+  class=3Dreplaceable><TT>token</TT></I>]. The string value of a node is =
+defined=20
+  by the XPath specification: for element nodes it is the concatenation =
+of the=20
+  string values of all descendant text nodes, for text nodes it is the =
+node's=20
+  character data value, for attribute nodes it is the attribute value, =
+for=20
+  comment nodes it is the comment data and for processing instruction =
+nodes it=20
+  is the PI data.</P>
+  <P>This is not a standard DOM method for this interface.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>addEventListener</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756245><A name=3Did756245></A><TT=20
+  class=3Dmethodname>addEventListener</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>type</TT></I> <I=20
+  class=3Dreplaceable><TT>listener</TT></I> ?option value...? </DIV>
+  <P>Register an event listener for the node given by [<I=20
+  class=3Dreplaceable><TT>token</TT></I>] listening for events of type =
+[<I=20
+  class=3Dreplaceable><TT>type</TT></I>]. The event mechanism functions =
+as=20
+  described in the W3C DOM Level 2 Event module.</P>
+  <P>When an event of type [<I class=3Dreplaceable><TT>type</TT></I>] =
+occurs the=20
+  script [<I class=3Dreplaceable><TT>listener</TT></I>] is evaluated, in =
+the=20
+  global context. The token of the event node is appended to the =
+script.</P>
+  <P>If the [<I class=3Dreplaceable><TT>listener</TT></I>] argument is =
+omitted=20
+  then the listener for the given event type is returned.</P>
+  <P>Valid options are:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm>[-usecapture] [<I=20
+    class=3Dreplaceable><TT>boolean</TT></I>]</SPAN>
+    <DD>
+    <P>If true the listener is triggered in the event capturing phase. =
+If false=20
+    the listener is triggered in the event bubbling =
+phase.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>removeEventListener</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756406><A name=3Did756406></A><TT=20
+  class=3Dmethodname>removeEventListener</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>type</TT></I> <I=20
+  class=3Dreplaceable><TT>listener</TT></I> ?option value...? </DIV>
+  <P>Removes an event listener previously registered for the node given =
+by [<I=20
+  class=3Dreplaceable><TT>token</TT></I>] listening for events of type =
+[<I=20
+  class=3Dreplaceable><TT>type</TT></I>].</P>
+  <P>Valid options are:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm>[-usecapture] [<I=20
+    class=3Dreplaceable><TT>boolean</TT></I>]</SPAN>
+    <DD>
+    <P>If true the capturing listener is removed. If false the bubbling =
+listener=20
+    is removed.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>dispatchEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756528><A name=3Did756528></A><TT=20
+  class=3Dmethodname>dispatchEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>event</TT></I> </DIV>
+  <P>Dispatches the event given by [<I =
+class=3Dreplaceable><TT>event</TT></I>]=20
+  with target node [<I class=3Dreplaceable><TT>token</TT></I>]. The =
+event=20
+  mechanism functions as described in the W3C DOM Level 2 Event module. =
+The=20
+  event enters the capturing phase first, followed by the bubbling =
+phase. During=20
+  each phase any event listeners registered for the same event type as =
+the event=20
+  [<I class=3Dreplaceable><TT>event</TT></I>] are triggered; their =
+script is=20
+  evaluated. Unless the script invokes the <TT=20
+  class=3Dtclmethod>stopPropagation</TT> method of the <A=20
+  =
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__event">=
+<SPAN><B=20
+  class=3Dtclcommand>dom::event</B></SPAN></A> command, all registered =
+event=20
+  listeners will be triggered. The order in which listeners registered =
+at a=20
+  particular node for a particular phase are triggered is=20
+undefined.</P></DD></DL></DIV></DIV>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did756605></A>
+<H3><A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__element=
+"><SPAN><B=20
+class=3Dtclcommand>dom::element</B></SPAN></A></H3>
+<P>This command provides functions for element type nodes.</P>
+<P>Valid methods for this command are as follows:</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>cget</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756633><A name=3Did756633></A><TT=20
+  class=3Dmethodname>cget</TT> <I class=3Dreplaceable><TT>token</TT></I> =
+<I=20
+  class=3Dreplaceable><TT>option</TT></I> </DIV>
+  <P>This method returns the current setting of configuration options =
+for an=20
+  element. See the <TT class=3Dmethodname>configure</TT> method for the =
+list of=20
+  valid configuration options.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>configure</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756678><A name=3Did756678></A><TT=20
+  class=3Dmethodname>configure</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> ?<I=20
+  class=3Dreplaceable><TT>option</TT></I> <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>This method sets configuration options for an element. Note that =
+element=20
+  type nodes only have read-only options.</P>
+  <P>Valid configuration options are as follows:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-tagName</TT> [<I=20
+    class=3Dreplaceable><TT>name</TT></I>]</SPAN>
+    <DD>The tag name, or element type, of this element.
+    <DT><SPAN class=3Dterm><TT class=3Doption>-empty</TT> [<I=20
+    class=3Dreplaceable><TT>boolean</TT></I>]</SPAN>
+    <DD>
+    <P>Sets whether this element was specified as an empty element when =
+the=20
+    document was parsed. That is, XML empty element syntax such as <TT=20
+    class=3Dliteral>&lt;Empty/&gt;</TT> was used.</P>
+    <P>This option has no effect upon output (serialization) of the XML=20
+    document. Empty element syntax is automatically used where=20
+    appropriate.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>getAttribute</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756799><A name=3Did756799></A><TT=20
+  class=3Dmethodname>getAttribute</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>This method returns the attribute value of the attribute given by =
+<TT=20
+  class=3Doption><I class=3Dreplaceable><TT>name</TT></I></TT>. If the =
+attribute=20
+  does not exist, then an empty string is returned.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>setAttribute</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756845><A name=3Did756845></A><TT=20
+  class=3Dmethodname>setAttribute</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>name</TT></I> <I =
+class=3Dreplaceable><TT>value</TT></I>=20
+  </DIV>
+  <P>This method sets the attribute value of the attribute given by <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>name</TT></I></TT>. If the =
+attribute=20
+  already exists then its value is replaced, otherwise the attribute is=20
+  created.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>removeAttribute</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756900><A name=3Did756900></A><TT=20
+  class=3Dmethodname>removeAttribute</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>This method deletes the attribute given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>name</TT></I></TT>. If the attribute does not =
+exist then=20
+  the method has no effect.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>getAttributeNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756945><A name=3Did756945></A><TT=20
+  class=3Dmethodname>getAttributeNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>Not implemented.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>setAttributeNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did756984><A name=3Did756984></A><TT=20
+  class=3Dmethodname>setAttributeNode</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>Not implemented.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>removeAttributeNode</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757024><A name=3Did757024></A><TT=20
+  class=3Dmethodname>removeAttributeNode</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>name</TT></I>=20
+  </DIV>
+  <P>Not implemented.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>getAttributeNS</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757063><A name=3Did757063></A><TT=20
+  class=3Dmethodname>getAttributeNS</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>ns</TT></I> <I =
+class=3Dreplaceable><TT>name</TT></I>=20
+  </DIV>
+  <P>This method returns the attribute value of the attribute given by =
+<TT=20
+  class=3Doption><I class=3Dreplaceable><TT>name</TT></I></TT> in the =
+XML namespace=20
+  [<I class=3Dreplaceable><TT>ns</TT></I>]. If the attribute does not =
+exist, then=20
+  an empty string is returned.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>setAttributeNS</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757126><A name=3Did757126></A><TT=20
+  class=3Dmethodname>setAttributeNS</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>ns</TT></I> <I =
+class=3Dreplaceable><TT>name</TT></I> <I=20
+  class=3Dreplaceable><TT>value</TT></I> </DIV>
+  <P>This method sets the attribute value of the attribute given by <TT=20
+  class=3Doption><I class=3Dreplaceable><TT>name</TT></I></TT> in the =
+XML namespace=20
+  [<I class=3Dreplaceable><TT>ns</TT></I>]. If the attribute already =
+exists then=20
+  its value is replaced, otherwise the attribute is created.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>removeAttributeNS</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757199><A name=3Did757199></A><TT=20
+  class=3Dmethodname>removeAttributeNS</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>ns</TT></I> <I=20
+  class=3Dreplaceable><TT>name</TT></I> </DIV>
+  <P>This method deletes the attribute given by <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>name</TT></I></TT> in the XML namespace [<I=20
+  class=3Dreplaceable><TT>ns</TT></I>]. If the attribute does not exist =
+then the=20
+  method has no effect.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>getElementsByTagName</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757262><A name=3Did757262></A><TT=20
+  class=3Dmethodname>getElementsByTagName</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>name</TT></I>=20
+  </DIV>
+  <P>This method searches the node given by the argument <TT =
+class=3Doption><I=20
+  class=3Dreplaceable><TT>token</TT></I></TT> for descendant child =
+elements with a=20
+  type matching the argument <TT class=3Doption><I=20
+  class=3Dreplaceable><TT>name</TT></I></TT>. The wildcard character <TT =
+
+  class=3Dliteral>*</TT> matches any element type. The return result is =
+a=20
+  "live-list" which is represented by a Tcl variable. This method =
+returns the=20
+  name of the Tcl variable that contains the list of tokens that =
+match.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>normalize</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757322><A name=3Did757322></A><TT=20
+  class=3Dmethodname>normalize</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> </DIV>
+  <P>This method recursively coalesces textNodes within the children of =
+the=20
+  given node. textNodes which are adjacent in the DOM tree cannot be=20
+  distinguished in the serialized XML =
+document.</P></DD></DL></DIV></DIV>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did757348></A>
+<H3><A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__process=
+inginstruction"><SPAN><B=20
+class=3Dtclcommand>dom::processinginstruction</B></SPAN></A></H3>
+<P>This command provides functions for processingInstruction type =
+nodes.</P>
+<P>Valid methods for this command are as follows:</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>cget</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757376><A name=3Did757376></A><TT=20
+  class=3Dmethodname>cget</TT> <I class=3Dreplaceable><TT>token</TT></I> =
+<I=20
+  class=3Dreplaceable><TT>option</TT></I> </DIV>
+  <P>This method returns the current setting of configuration options =
+for an=20
+  element. See the <TT class=3Dmethodname>configure</TT> method for the =
+list of=20
+  valid configuration options.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>configure</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757421><A name=3Did757421></A><TT=20
+  class=3Dmethodname>configure</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> ?<I=20
+  class=3Dreplaceable><TT>option</TT></I> <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>This method sets configuration options for a processing =
+instruction.</P>
+  <P>Valid configuration options are as follows:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-target</TT> [<I=20
+    class=3Dreplaceable><TT>name</TT></I>]</SPAN>
+    <DD>This option sets the target of the processing instruction. This =
+is a=20
+    read-only configuration option.
+    <DT><SPAN class=3Dterm><TT class=3Doption>-data</TT> [<I=20
+    class=3Dreplaceable><TT>data</TT></I>]</SPAN>
+    <DD>
+    <P>This option sets the data of the processing=20
+  instruction.</P></DD></DL></DIV></DD></DL></DIV></DIV>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did757523></A>
+<H3><A=20
+href=3D"http://tclxml.sourceforge.net/tcldom/3.1/tcldom.html#dom__event">=
+<SPAN><B=20
+class=3Dtclcommand>dom::event</B></SPAN></A></H3>
+<P>This command provides functions for event type nodes.</P>
+<P>Valid methods for this command are as follows:</P>
+<DIV class=3Dvariablelist>
+<DL>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>cget</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757551><A name=3Did757551></A><TT=20
+  class=3Dmethodname>cget</TT> <I class=3Dreplaceable><TT>token</TT></I> =
+</DIV>
+  <P>This method retrieves configuration options for an event.</P>
+  <P>Valid configuration options are as follows:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-altKey</TT></SPAN>
+    <DD>This option determines whether the ALT modifier key has been =
+specified=20
+    for this event.
+    <DT><SPAN class=3Dterm><TT class=3Doption>-attrName</TT>, =
+</SPAN><SPAN=20
+    class=3Dterm><TT class=3Doption>-timeStamp</TT></SPAN>
+    <DD>This option gives the name of the attribute associated with this =
+event.
+    <P>This option gives the time at which the event was posted. The =
+value is=20
+    the number of milliseconds since the epoch, which is compatible with =
+the Tcl=20
+    <SPAN><B class=3Dcommand>clock</B></SPAN> command. </P>
+    <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+    <H3 class=3Dtitle>Note</H3>The implementation of this method depends =
+on the=20
+    <TT class=3Dmethodname>Tcl_GetTime</TT> function.This function only =
+became=20
+    publically available in Tcl 8.4. If a version of Tcl prior to 8.4 is =
+being=20
+    used, then this option will have the value <TT =
+class=3Dliteral>0</TT>.</DIV>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-type</TT></SPAN>
+    <DD>The type of this event.
+    <DT><SPAN class=3Dterm><TT class=3Doption>-view</TT></SPAN>
+    <DD>This option gives whether the view of the event.</DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>configure</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757882><A name=3Did757882></A><TT=20
+  class=3Dmethodname>configure</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> ?<I=20
+  class=3Dreplaceable><TT>option</TT></I> <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>This method sets the configuration options for an event. However, =
+all event=20
+  options are read-only. See the <TT class=3Dmethodname>cget</TT> method =
+for the=20
+  list of valid configuration options.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>stopPropagation</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757943><A name=3Did757943></A><TT=20
+  class=3Dmethodname>stopPropagation</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  </DIV>
+  <P>This method cancels further propagation of the event.</P>
+  <DIV class=3Dnote style=3D"MARGIN-LEFT: 0.5in; MARGIN-RIGHT: 0.5in">
+  <H3 class=3Dtitle>Note</H3>Invoking this method does not prevent event =
+listeners=20
+  at the current node from being triggered.</DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>preventDefault</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did757979><A name=3Did757979></A><TT=20
+  class=3Dmethodname>preventDefault</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  </DIV>
+  <P>This method stops the default action for this event from =
+occurring.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>initEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did758010><A name=3Did758010></A><TT=20
+  class=3Dmethodname>initEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>type</TT></I> <I =
+class=3Dreplaceable><TT>bubbles</TT></I>=20
+  <I class=3Dreplaceable><TT>cancelable</TT></I> </DIV>
+  <P>Initialise the event.</P>
+  <P>[<I class=3Dreplaceable><TT>type</TT></I>] gives the type of the =
+event. Any=20
+  of the event types defined by the W3C DOM Level 2 Event module may be=20
+  specified, or a user-defined event type may be used instead.</P>
+  <P>[<I class=3Dreplaceable><TT>bubbles</TT></I>] indicates whether the =
+event=20
+  will enter the bubbling phase after the capturing phase. [<I=20
+  class=3Dreplaceable><TT>cancelable</TT></I>] indicates whether the =
+event may be=20
+  cancelled.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>initUIEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did758102><A name=3Did758102></A><TT=20
+  class=3Dmethodname>initUIEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>type</TT></I> <I =
+class=3Dreplaceable><TT>bubbles</TT></I>=20
+  <I class=3Dreplaceable><TT>cancelable</TT></I> <I=20
+  class=3Dreplaceable><TT>view</TT></I> <I =
+class=3Dreplaceable><TT>detail</TT></I>=20
+  </DIV>
+  <P>Initialise a user interface event. See <TT =
+class=3Dtclmethod>initEvent</TT>=20
+  for further information.</P>
+  <P>[<I class=3Dreplaceable><TT>view</TT></I>] gives the view for the =
+event (not=20
+  supported by TclDOM). [<I class=3Dreplaceable><TT>detail</TT></I>] =
+provides=20
+  extra data for the event.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>initMouseEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did758202><A name=3Did758202></A><TT=20
+  class=3Dmethodname>initMouseEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>type</TT></I> <I=20
+  class=3Dreplaceable><TT>bubbles</TT></I> <I=20
+  class=3Dreplaceable><TT>cancelable</TT></I> <I=20
+  class=3Dreplaceable><TT>view</TT></I> <I =
+class=3Dreplaceable><TT>detail</TT></I>=20
+  <I class=3Dreplaceable><TT>screenX</TT></I> <I=20
+  class=3Dreplaceable><TT>screenY</TT></I> <I=20
+  class=3Dreplaceable><TT>clientX</TT></I> <I=20
+  class=3Dreplaceable><TT>clientY</TT></I> <I=20
+  class=3Dreplaceable><TT>ctrlKey</TT></I> <I=20
+  class=3Dreplaceable><TT>altKey</TT></I> <I=20
+  class=3Dreplaceable><TT>shiftKey</TT></I> <I=20
+  class=3Dreplaceable><TT>metaKey</TT></I> <I=20
+  class=3Dreplaceable><TT>button</TT></I> <I=20
+  class=3Dreplaceable><TT>relatedNode</TT></I> </DIV>
+  <P>Initialise a mouse event. See <TT =
+class=3Dtclmethod>initUIEvent</TT> for=20
+  further information.</P>
+  <P>[<I class=3Dreplaceable><TT>screenX</TT></I>] and [<I=20
+  class=3Dreplaceable><TT>screenY</TT></I>] give the coordinates at =
+which the=20
+  event occurred relative to the screen. [<I=20
+  class=3Dreplaceable><TT>screenX</TT></I>] and [<I=20
+  class=3Dreplaceable><TT>screenY</TT></I>] give the coordinates at =
+which the=20
+  event occurred relative to the window.</P>
+  <P>[<I class=3Dreplaceable><TT>ctrlKey</TT></I>], [<I=20
+  class=3Dreplaceable><TT>altKey</TT></I>], [<I=20
+  class=3Dreplaceable><TT>shiftKey</TT></I>], [<I=20
+  class=3Dreplaceable><TT>metaKey</TT></I>] indicate whether the =
+respective=20
+  modifier key was pressed when the event occurred.</P>
+  <P>[<I class=3Dreplaceable><TT>button</TT></I>] indicates which =
+button, if any,=20
+  was pressed when the event occurred.</P>
+  <P>[<I class=3Dreplaceable><TT>relatedNode</TT></I>] specifies that a =
+DOM node=20
+  is associated with the event.</P>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>initMutationEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did758473><A name=3Did758473></A><TT=20
+  class=3Dmethodname>initMutationEvent</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>type</TT></I> <I=20
+  class=3Dreplaceable><TT>bubbles</TT></I> <I=20
+  class=3Dreplaceable><TT>cancelable</TT></I> <I=20
+  class=3Dreplaceable><TT>relatedNode</TT></I> <I=20
+  class=3Dreplaceable><TT>prevValue</TT></I> <I=20
+  class=3Dreplaceable><TT>newValue</TT></I> <I=20
+  class=3Dreplaceable><TT>attrName</TT></I> </DIV>
+  <P>Initialise a tree mutation event event. See <TT=20
+  class=3Dtclmethod>initEvent</TT> for further information.</P>
+  <P>[<I class=3Dreplaceable><TT>relatedNode</TT></I>] specifies a DOM =
+node to=20
+  associate with the event. [<I =
+class=3Dreplaceable><TT>prevValue</TT></I>] gives=20
+  the previous value of the node. [<I =
+class=3Dreplaceable><TT>newValue</TT></I>]=20
+  gives the new value of the node. [<I =
+class=3Dreplaceable><TT>attrName</TT></I>]=20
+  gives the name of the attribute where the event is modifying an =
+attribute=20
+  value.</P>
+  <DT><SPAN class=3Dterm><TT class=3Dmethodname>postUIEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did758610><A name=3Did758610></A><TT=20
+  class=3Dmethodname>postUIEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I> <I=20
+  class=3Dreplaceable><TT>type</TT></I> ?option <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>Non-standard convenience method that handles posting an user =
+interface=20
+  event with [<I class=3Dreplaceable><TT>token</TT></I>] as the target =
+node. This=20
+  method performs the following functions:</P>
+  <DIV class=3Dorderedlist>
+  <OL type=3D1>
+    <LI>
+    <P>Create an event node,</P>
+    <LI>
+    <P>Initialise the event node (using default values where =
+required),</P>
+    <LI>
+    <P>Dispatch the event,</P>
+    <LI>
+    <P>Destroy the event node.</P></LI></OL></DIV>
+  <P>[<I class=3Dreplaceable><TT>type</TT></I>] gives the event =
+type.</P>
+  <P>The following options are valid:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-bubbles</TT></SPAN>
+    <DD>
+    <P>Indicates whether the event bubbles.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-cancelable</TT></SPAN>
+    <DD>
+    <P>Indicates whether the event can be cancelled.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-view</TT></SPAN>
+    <DD>
+    <P>The view.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-detail</TT></SPAN>
+    <DD>
+    <P>Extra data for the event.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>postMouseEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did758796><A name=3Did758796></A><TT=20
+  class=3Dmethodname>postMouseEvent</TT> <I =
+class=3Dreplaceable><TT>token</TT></I>=20
+  <I class=3Dreplaceable><TT>type</TT></I> ?option <I=20
+  class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>Non-standard convenience method that handles posting a mouse event =
+with [<I=20
+  class=3Dreplaceable><TT>token</TT></I>] as the target node. This =
+method performs=20
+  the following functions:</P>
+  <DIV class=3Dorderedlist>
+  <OL type=3D1>
+    <LI>
+    <P>Create an event node,</P>
+    <LI>
+    <P>Initialise the event node (using default values where =
+required),</P>
+    <LI>
+    <P>Dispatch the event,</P>
+    <LI>
+    <P>Destroy the event node.</P></LI></OL></DIV>
+  <P>[<I class=3Dreplaceable><TT>type</TT></I>] gives the event =
+type.</P>
+  <P>The following options are valid:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-bubbles</TT></SPAN>
+    <DD>
+    <P>Indicates whether the event bubbles.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-cancelable</TT></SPAN>
+    <DD>
+    <P>Indicates whether the event can be cancelled.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-view</TT></SPAN>
+    <DD>
+    <P>The view.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-detail</TT></SPAN>
+    <DD>
+    <P>Extra data for the event.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-screenX</TT></SPAN>
+    <DD>
+    <P>Gives the screen X coordinate.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-screenY</TT></SPAN>
+    <DD>
+    <P>Gives the screen Y coordinate.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-clientX</TT></SPAN>
+    <DD>
+    <P>Gives the window X coordinate.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-clientY</TT></SPAN>
+    <DD>
+    <P>Gives the window Y coordinate.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-ctrlKey</TT></SPAN>
+    <DD>
+    <P>Indicates whether the control modifier key was pressed.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-altKey</TT></SPAN>
+    <DD>
+    <P>Indicates whether the ALT modifier key was pressed.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-shiftKey</TT></SPAN>
+    <DD>
+    <P>Indicates whether the shift modifier key was pressed.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-metaKey</TT></SPAN>
+    <DD>
+    <P>Indicates whether the meta modifier key was pressed.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-button</TT></SPAN>
+    <DD>
+    <P>Gives the button pressed.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-relatedNode</TT></SPAN>
+    <DD>
+    <P>Gives a node to associate with the event.</P></DD></DL></DIV>
+  <DT><SPAN class=3Dterm><TT =
+class=3Dmethodname>postMutationEvent</TT></SPAN>
+  <DD>
+  <DIV class=3Dtclcmdsynopsis id=3Did759130><A name=3Did759130></A><TT=20
+  class=3Dmethodname>postMutationEvent</TT> <I=20
+  class=3Dreplaceable><TT>token</TT></I> <I =
+class=3Dreplaceable><TT>type</TT></I>=20
+  ?option <I class=3Dreplaceable><TT>value</TT></I>...? </DIV>
+  <P>Non-standard convenience method that handles posting a mutation =
+event with=20
+  [<I class=3Dreplaceable><TT>token</TT></I>] as the target node. This =
+method=20
+  performs the following functions:</P>
+  <DIV class=3Dorderedlist>
+  <OL type=3D1>
+    <LI>
+    <P>Create an event node,</P>
+    <LI>
+    <P>Initialise the event node (using default values where =
+required),</P>
+    <LI>
+    <P>Dispatch the event,</P>
+    <LI>
+    <P>Destroy the event node.</P></LI></OL></DIV>
+  <P>[<I class=3Dreplaceable><TT>type</TT></I>] gives the event =
+type.</P>
+  <P>The following options are valid:</P>
+  <DIV class=3Dvariablelist>
+  <DL>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-bubbles</TT></SPAN>
+    <DD>
+    <P>Indicates whether the event bubbles.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-cancelable</TT></SPAN>
+    <DD>
+    <P>Indicates whether the event can be cancelled.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-relatedNode</TT></SPAN>
+    <DD>
+    <P>Gives a node to associate with the event.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-prevValue</TT></SPAN>
+    <DD>
+    <P>Gives the previous value of the target node.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-newValue</TT></SPAN>
+    <DD>
+    <P>Gives the new value of the target node.</P>
+    <DT><SPAN class=3Dterm><TT class=3Doption>-attrName</TT></SPAN>
+    <DD>
+    <P>Gives the name of the attribute=20
+modified.</P></DD></DL></DIV></DD></DL></DIV></DIV></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did759341></A>
+<H2>Errors</H2>
+<P>If an operation results in an error condition, an error message is =
+returned=20
+as a structured Tcl list. The list has members as follows:</P>
+<DIV class=3Dinformalexample><PRE class=3Dprogramlisting>{domain level =
+code node line message int1 int2 string1 string2 string3}</PRE></DIV>
+<P>The format of the list is described in the TclXML manual =
+page.</P></DIV>
+<DIV class=3Drefsect1 lang=3Den><A name=3Did759367></A>
+<H2>Implementations</H2>
+<P>This section documents the various implmentations of the TclDOM =
+API.</P>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did759377></A>
+<H3>Tcl Implementation</H3>
+<P>The Tcl implementation is provided by the <TT =
+class=3Dtclpackage>dom::tcl</TT>=20
+package.</P>
+<DIV class=3Drefsect3 lang=3Den><A name=3Did759391></A>
+<H4>Limitations</H4>
+<P>This implementation is not able to preform the following =
+functions:</P>
+<DIV class=3Ditemizedlist>
+<UL type=3Ddisc>
+  <LI>
+  <P>Validation: DTD, XML Schema or RelaxNG validation are not =
+supported.</P>
+  <LI>
+  <P>Character encodings: The TclDOM/tcl implementation itself does not =
+handle=20
+  character encodings other than utf-8. Character encodings are handled =
+by Tcl=20
+  itself.</P></LI></UL></DIV></DIV></DIV>
+<DIV class=3Drefsect2 lang=3Den><A name=3Did759423></A>
+<H3>libxml2 Implementation</H3>
+<P>The TclDOM/libxml2 implementation is a wrapper for the <A=20
+href=3D"http://xmlsoft.org/" target=3D_top>Gnome libxml2 library</A>. It =
+is provided=20
+by the <TT class=3Dtclpackage>dom::libxml2</TT> package. It is a =
+high-performance=20
+library, making use of Tcl objects for fast access to tree nodes.</P>
+<P>On MS Windows, it is necessary to load all required packages =
+separately. For=20
+example:</P>
+<DIV class=3Dinformalexample><PRE class=3Dprogramlisting>package require =
+xml
+package require xml::libxml2
+package require dom
+</PRE></DIV>
+<DIV class=3Drefsect3 lang=3Den><A name=3Did759460></A>
+<H4>Limitations</H4>
+<DIV class=3Ditemizedlist>
+<UL type=3Ddisc>
+  <LI>
+  <P>The TclXML/libxml2 parser must be used to parse an XML document. It =
+is not=20
+  possible to use any other parser class.</P>
+  <LI>
+  <P>RELAX-NG validation is not yet supported.</P>
+  <LI>
+  <P>The importNode method has not been=20
+implemented.</P></LI></UL></DIV></DIV></DIV></DIV></DIV></BODY></HTML>

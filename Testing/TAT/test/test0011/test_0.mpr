@@ -1,0 +1,15 @@
+mscdocument test;
+msc test;
+IUT: instance;
+Test: instance;
+Test: out /*{@0}*/A,1((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) to IUT;
+IUT: in /*{@0}*/A,1((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) from Test;
+IUT: out /*{@0}*/B,2((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) to Test;
+Test: in /*{@0}*/B,2((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) from IUT;
+Test: out /*{@0}*/A,3((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) to IUT;
+IUT: in /*{@0}*/A,3((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) from Test;
+IUT: out /*{@0}*/B,4((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) to Test;
+Test: in /*{@0}*/B,4((: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 :)) from IUT;
+IUT: endinstance;
+Test: endinstance;
+endmsc;
